@@ -8,6 +8,7 @@ import { PiPersonThin } from "react-icons/pi";
 import { IoHardwareChipOutline } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
 import { CiShoppingTag } from "react-icons/ci";
+import { GrLogout } from "react-icons/gr";
 
 import Link from "next/link";
 
@@ -19,8 +20,8 @@ const SideBar = () => {
           <Image src={logo} width={50} height={44} alt="Logo" />
         </div>
         <div className="text-white p-1 w-56 h-10 font-[Manrope] font-normal text">
-          <ul className="grid gap-5 h-10">
-            <li className=" h-10 active:bg-[#3F3F46] active:h-10 active:rounded-lg active:w-56 p-2 ">
+          <ul className="grid gap-4 h-10 text-[#A1A1AA]">
+            <li className=" h-10 active:bg-[#3F3F46] active:text-white active:h-10 active:rounded-lg active:w-56 p-2 ">
               {" "}
               <div className="flex items-center">
                 <VscGraph />
@@ -29,7 +30,7 @@ const SideBar = () => {
                 </Link>{" "}
               </div>
             </li>
-            <li className="active:bg-[#3F3F46]  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
+            <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
               <div className="flex items-center">
                 <FaTicketSimple />
@@ -38,7 +39,7 @@ const SideBar = () => {
                 </Link>{" "}
               </div>
             </li>
-            <li className="active:bg-[#3F3F46]  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
+            <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
               <div className="flex items-center">
                 <PiPersonThin />
@@ -47,7 +48,7 @@ const SideBar = () => {
                 </Link>{" "}
               </div>
             </li>
-            <li className="active:bg-[#3F3F46]  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
+            <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
               <div className="flex items-center">
                 <IoHardwareChipOutline />
@@ -56,7 +57,7 @@ const SideBar = () => {
                 </Link>{" "}
               </div>
             </li>
-            <li className="active:bg-[#3F3F46]  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
+            <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
               <div className="flex items-center">
                 <GoPeople />
@@ -65,7 +66,7 @@ const SideBar = () => {
                 </Link>{" "}
               </div>
             </li>
-            <li className="active:bg-[#3F3F46]  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
+            <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
               <div className="flex items-center">
                 <IoSettingsOutline />
@@ -74,7 +75,7 @@ const SideBar = () => {
                 </Link>{" "}
               </div>
             </li>
-            <li className="active:bg-[#3F3F46]  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
+            <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
               <div className="flex items-center">
                 <CiShoppingTag />
@@ -83,11 +84,18 @@ const SideBar = () => {
                 </Link>{" "}
               </div>
             </li>
+            <div className="flex justify-self-center">
+              <li className=" ">
+                <div className=" flex items-center ">
+                  <GrLogout />
+                  <Link href="/" className="mx-3">
+                    <h1 className="font-normal text-base mx-2">Logout</h1>{" "}
+                  </Link>
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
-        {/* <div className="">
-          <h1 className="font-normal text-base text-white">Logout</h1>
-        </div> */}
       </div>
     </>
   );

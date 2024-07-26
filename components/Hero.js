@@ -1,5 +1,11 @@
 import React from "react";
 import Cards from "./Cards";
+import { GoLinkExternal } from "react-icons/go";
+import boy from "../images/Mask group.png";
+import ellipse from "../images/Ellipse 557.png";
+
+import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -18,26 +24,152 @@ const Hero = () => {
           <hr className="mx-4 w-[1000px]" />
         </div>
         <div className="flex justify-between">
-          <Cards heading="Summary" properties="">
-          <div>
-              <div className="w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
-                <h1 className="">Awaiting Unit Arrival</h1>
-                <h1 className="bg-black text-white rounded-sm p-1 ">06</h1>
+          <Cards heading="Summary">
+            {/* <h1 className='font-extrabold text-xl'>Summary</h1> */}
+            <div className="flex flex-col">
+              <div className="my-2">
+                <div className=" flex justify-between items-center rounded-md w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
+                  <h1 className="">Awaiting Unit Arrival</h1>
+                  <div className="bg-black rounded-md">
+                    <h1 className=" text-white p-1 ">06</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="my-2">
+                <div className=" flex justify-between items-center rounded-md w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
+                  <h1 className="">In-queue</h1>
+                  <div className="bg-black rounded-md">
+                    <h1 className=" text-white p-1 ">12</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="my-2">
+                <div className=" flex justify-between items-center rounded-md w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
+                  <h1 className="">In-progress</h1>
+                  <div className="bg-black rounded-md">
+                    <h1 className=" text-white p-1 ">02</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="my-2">
+                <div className=" flex justify-between items-center rounded-md w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
+                  <h1 className="">Resolved</h1>
+                  <div className="bg-black rounded-md">
+                    <h1 className=" text-white p-1 ">24</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </Cards>
-        
-          <Cards heading="Overview"></Cards>
-          <Cards heading="Latest Tickets"></Cards>
+          <Cards heading="Overview">
+            <div className="flex flex-col items-center mt-8">
+              <h2 className="font-semibold text-sm">Total Tickets</h2>
+              <p className="font-semibold text-2xl">
+                <span className="font-extrabold text-5xl">24</span>/40
+              </p>
+            </div>
+            <div className="flex flex-col ">
+              <Image
+                src={ellipse}
+                width="282px"
+                height="282px"
+                className=""
+              ></Image>
+
+              <Image
+                src={boy}
+                width="151px"
+                height="89px"
+                className="rounded-[44px]"
+              ></Image>
+            </div>
+          </Cards>
+          <Cards heading="Latest Tickets">
+            <div className="mt-6 flex flex-col">
+              <div>
+                <table className="table">
+                  <tbody>
+                    <tr className="m-4 border-b border-gray-400">
+                      <th>1. </th>
+                      <td>alma.lawson@example.com </td>
+                      <td>
+                        <Link href="">
+                          <GoLinkExternal />
+                        </Link>
+                      </td>
+                    </tr>
+
+                    <tr className="m-4 border-b border-gray-400">
+                      <th>2. </th>
+                      <td>kenzi.lawson@example.com </td>
+                      <td>
+                        <Link href="">
+                          <GoLinkExternal />
+                        </Link>{" "}
+                      </td>
+                    </tr>
+                    <tr className=" border-b border-gray-400">
+                      <th>3.</th>
+                      <td>jessica.hanson@example.com</td>
+                      <td>
+                        <Link href="">
+                          <GoLinkExternal />
+                        </Link>{" "}
+                      </td>
+                    </tr>
+
+                    <tr className="m-4 border-b border-gray-400">
+                      <th>4.</th>
+                      <td>nathan.roberts@example.com</td>
+                      <td>
+                        <Link href="">
+                          <GoLinkExternal />
+                        </Link>{" "}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="bg-[#18181B] mt-5 flex justify-center items-center rounded w-[316px] h-9">
+                <h1 className=" text-center font-semibold text-sm text-white">
+                  View All
+                </h1>
+              </div>
+            </div>
+          </Cards>
         </div>
         <div className="py-6 flex items-center">
           <h1 className="text-2xl font-extrabold">Tag Stats:</h1>
           <hr className="mx-4 w-[1000px]" />
         </div>
         <div className="flex justify-between">
-          <Cards heading="Customer Issues"></Cards>
-          <Cards heading="Overview"></Cards>
-          <Cards heading="Overview"></Cards>
+          <Cards heading="Customer Issues">
+            <div>
+              <h1 className="font-medium text-sm">Total issues: 6</h1>
+              <div>Graph</div>
+            </div>
+          </Cards>
+          <Cards heading="Overview">
+            <div className="flex flex-col m-4">
+              <div className="mb-4">
+                <h2 className="font-semibold text-base p-2">Total Tags</h2>
+                <h1 className="font-extrabold text-[32px] p-2">06</h1>
+              </div>
+              <hr />
+              <div>
+                <h2 className="font-semibold text-base p-2">
+                  Total Customer Issues
+                </h2>
+                <h1 className="font-extrabold text-[32px] p-2">06</h1>
+              </div>
+            </div>
+          </Cards>
+          <Cards heading="Overview">
+            <div>
+              <h1 className="font-medium text-sm">Total issues: 6</h1>
+              <div>Graph</div>
+            </div>
+          </Cards>
         </div>
       </div>
     </>
