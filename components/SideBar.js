@@ -84,17 +84,15 @@ const SideBar = () => {
                 </Link>{" "}
               </div>
             </li>
-            <div className="flex justify-self-center">
-              <li className=" ">
-                <div className=" flex items-center ">
-                  <GrLogout />
-                  <Link href="/" className="mx-3">
-                    <h1 className="font-normal text-base mx-2">Logout</h1>{" "}
-                  </Link>
-                </div>
-              </li>
-            </div>
           </ul>
+        </div>
+        <div className="flex justify-self-center justify-end  text-[#A1A1AA] ">
+          <div className=" flex items-center ">
+            <GrLogout />
+            <Link href="/" className="mx-3">
+              <h1 className="font-normaltext-base mx-2">Logout</h1>{" "}
+            </Link>
+          </div>
         </div>
       </div>
     </>
