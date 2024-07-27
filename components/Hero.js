@@ -1,8 +1,7 @@
 import React from "react";
 import Cards from "./Cards";
 import { GoLinkExternal } from "react-icons/go";
-import boy from "../images/Mask group.png";
-import ellipse from "../images/Ellipse 557.png";
+import ellipse from "../images/Group 811715.png";
 import issuesGraph from "../images/Group 811714.png";
 import pieGraph from "../images/Group 811713.png";
 import Link from "next/link";
@@ -63,6 +62,7 @@ const Hero = () => {
             </div>
           </Cards>
           <Cards heading="Overview" className='pb-0'>
+           <div className='flex justify-center'>
             <div className="flex flex-col items-center mt-8">
               <h2 className="font-semibold text-sm">Total Tickets</h2>
               <p className="font-semibold text-2xl">
@@ -72,22 +72,16 @@ const Hero = () => {
                 src={ellipse}
                 width="282px"
                 height="282px"
-                className="justify-self-end "
+                className=" justify-self-end "
               ></Image>
               
-                <Image
-                  src={boy}
-                  width="151px"
-                  height="89px"
-                  className="  rounded-[44px]"
-                ></Image>
-             
+            </div>
             </div>
           </Cards>
           <Cards heading="Latest Tickets">
-            <div className="mt-6 flex flex-col justify-between">
+            <div className="mt-4 flex flex-col justify-between">
               <div>
-                <table className="table-auto w-[316px] ">
+                <table className="table w-[316px] ">
                   <tbody>
                     <tr className="m-4 border-b border-gray-400">
                       <th>1. </th>

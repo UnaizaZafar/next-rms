@@ -19,11 +19,11 @@ const SideBar = () => {
         <div className="p-3 mb-14">
           <Image src={logo} width={50} height={44} alt="Logo" />
         </div>
-        <div className="text-white p-1 w-56 h-10 font-[Manrope] font-normal text">
-          <ul className="grid gap-4 h-10 text-[#A1A1AA]">
+        <div className="flex flex-col h-[1140px] justify-between text-white p-1 w-56 font-[Manrope] font-normal text">
+          <ul className=" flex flex-col text-[#A1A1AA]">
             <li className=" h-10 active:bg-[#3F3F46] active:text-white active:h-10 active:rounded-lg active:w-56 p-2 ">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center p-4">
                 <VscGraph />
                 <Link href="/" className="mx-3">
                   Analytics
@@ -32,7 +32,7 @@ const SideBar = () => {
             </li>
             <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center p-4">
                 <FaTicketSimple />
                 <Link href="/" className="mx-3">
                   Tickets
@@ -41,7 +41,7 @@ const SideBar = () => {
             </li>
             <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center p-4">
                 <PiPersonThin />
                 <Link href="/" className="mx-3">
                   Customers
@@ -50,7 +50,7 @@ const SideBar = () => {
             </li>
             <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center p-4">
                 <IoHardwareChipOutline />
                 <Link href="/" className="mx-3">
                   Hardware
@@ -59,7 +59,7 @@ const SideBar = () => {
             </li>
             <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center p-4">
                 <GoPeople />
                 <Link href="/" className="mx-3">
                   Team
@@ -68,7 +68,7 @@ const SideBar = () => {
             </li>
             <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center p-4">
                 <IoSettingsOutline />
                 <Link href="/" className="mx-3">
                   Settings
@@ -77,7 +77,7 @@ const SideBar = () => {
             </li>
             <li className="active:bg-[#3F3F46] active:text-white  active:rounded-lg active:w-56 p-2 h-10 active:h-10 ">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center p-4">
                 <CiShoppingTag />
                 <Link href="/" className="mx-3">
                   Tag Manager
@@ -85,9 +85,8 @@ const SideBar = () => {
               </div>
             </li>
           </ul>
-        </div>
-        <div className="flex justify-self-center justify-end  text-[#A1A1AA] ">
-          <div className=" flex items-center ">
+
+          <div className=" flex items-center self-center text-[#A1A1AA]">
             <GrLogout />
             <Link href="/" className="mx-3">
               <h1 className="font-normaltext-base mx-2">Logout</h1>{" "}
