@@ -79,13 +79,13 @@ const Hero = () => {
             </div>
           </Cards>
           <Cards heading="Latest Tickets">
-            <div className="mt-4 flex flex-col justify-between">
+            <div className=" flex flex-col justify-between">
               <div>
-                <table className="table w-[316px] ">
+                <table className="w-[316px] ">
                   <tbody>
-                    <tr className="m-4 border-b border-gray-400">
+                    <tr className=" border-b border-gray-400">
                       <th>1. </th>
-                      <td>alma.lawson@example.com </td>
+                      <td className='py-[14px] px-[10px]'>alma.lawson@example.com </td>
                       <td>
                         <Link href="">
                           <GoLinkExternal />
@@ -93,9 +93,9 @@ const Hero = () => {
                       </td>
                     </tr>
 
-                    <tr className="m-4 border-b border-gray-400 p-3">
+                    <tr className=" border-b border-gray-400 ">
                       <th>2. </th>
-                      <td>kenzi.lawson@example.com </td>
+                      <td  className='py-[14px] px-[10px]'>kenzi.lawson@example.com </td>
                       <td>
                         <Link href="">
                           <GoLinkExternal />
@@ -104,7 +104,7 @@ const Hero = () => {
                     </tr>
                     <tr className=" border-b border-gray-400">
                       <th>3.</th>
-                      <td>jessica.hanson@example.com</td>
+                      <td  className='py-[14px] px-[10px]'>jessica.hanson@example.com</td>
                       <td>
                         <Link href="">
                           <GoLinkExternal />
@@ -112,9 +112,9 @@ const Hero = () => {
                       </td>
                     </tr>
 
-                    <tr className="m-4 border-b border-gray-400 p-3">
+                    <tr className=" border-b border-gray-400">
                       <th>4.</th>
-                      <td>nathan.roberts@example.com</td>
+                      <td  className='py-[14px] px-[10px]'>nathan.roberts@example.com</td>
                       <td>
                         <Link href="">
                           <GoLinkExternal />
@@ -124,7 +124,7 @@ const Hero = () => {
                   </tbody>
                 </table>
               </div>
-              <div className="bg-[#18181B] mt-5 flex justify-center items-center rounded w-[316px] h-9">
+              <div className="bg-[#18181B] mt-4 flex justify-center items-center rounded w-[316px] h-[34px]">
                 <h1 className=" text-center font-semibold text-sm text-white">
                   View All
                 </h1>

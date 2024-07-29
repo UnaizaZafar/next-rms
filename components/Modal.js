@@ -21,7 +21,7 @@ const Modal = ({
     <>
       <div
         id="wrapper"
-        className="fixed inset-0 flex justify-center  items-center bg-white bg-opacity-25 backdrop-blur-sm"
+        className="fixed inset-0 flex justify-center  items-center bg-opacity-25 backdrop-blur-sm"
         onClick={handleClose}
       >
         <div className=" h-[700px] rounded-xl p-8  bg-white overflow-y-scroll m-8">

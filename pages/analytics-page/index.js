@@ -13,7 +13,7 @@ const page = () => {
         </div>
         <div className="flex flex-col">
           <div>
-            <TopBar />
+            <TopBar heading="Analytics"/>
           </div>
           <div className="mt-6 mx-7">
             <Hero/>

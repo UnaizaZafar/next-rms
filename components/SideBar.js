@@ -15,7 +15,7 @@ import Link from "next/link";
 const SideBar = () => {
   return (
     <>
-      <div className="bg-[#18181B] flex-col flex items-center p-10  w-[260px] h-[1161px]">
+      <div className="bg-[#18181B] flex-col flex items-center p-10  w-[260px] h-[1024px]">
         <div className="p-3 mb-14">
           <Image src={logo} width={50} height={44} alt="Logo" />
         </div>
@@ -34,7 +34,7 @@ const SideBar = () => {
               {" "}
               <div className="flex items-center p-4">
                 <FaTicketSimple />
-                <Link href="/" className="mx-3">
+                <Link href="/tickets-page" className="mx-3">
                   Tickets
                 </Link>{" "}
               </div>
