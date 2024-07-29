@@ -2,6 +2,8 @@ import React from "react";
 import { IoIosSearch } from "react-icons/io";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaRegPenToSquare } from "react-icons/fa6";
+import { IoIosArrowBack } from "react-icons/io";
+import { MdNavigateNext } from "react-icons/md";
 const TeamData = () => {
   return (
     <>
@@ -212,6 +214,14 @@ const TeamData = () => {
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div className="flex items-center mt-4 justify-end">
+          <IoIosArrowBack className="w-4 h-4 " />
+          <p className="text-[#D4D4D8] text-sm font-medium mx-3">Previous</p>
+         
+          <p className="text-[#52525B] text-sm font-medium mx-3">Next</p>
+          <MdNavigateNext className="w-4 h-4 " />
         </div>
       </div>
     </>
