@@ -57,9 +57,8 @@ const TicketNoData = () => {
           <thead className="font-semibold text-base border-b border-[#E4E4E8]">
             <th className="px-[6px] py-[14px]">RMA</th>
             <th>Status</th>
-            <th>Customer Email</th>
-            <th>Hardware</th>
-            <th>Updated at</th>
+            <th>Created at</th>
+            <th>Last Status Change</th>
             <th>Actions</th>
           </thead>
           </table>

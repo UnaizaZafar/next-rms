@@ -18,8 +18,8 @@ const index = () => {
             <TopBar heading='Tickets'/>
           </div>
           <div className="py-8 px-7 bg-[#FAFAFA]">
-           {/* <TicketsHero/> */}
-            <TicketNoData/>
+           <TicketsHero/>
+            {/* <TicketNoData/> */}
           </div>
         </div>
       </div>
