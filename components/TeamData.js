@@ -25,8 +25,8 @@ const TeamData = () => {
             </div>
           </div>
         </div>
-        <div className="text-left w-[1124px] h-[709px] rounded-xl border border-[#E4E4E7] mt-4">
-          <table className=" w-[1108px] h-fit rounded-md bg-white border-b border-[#E4E4E8] ">
+        
+          <table className=" w-[1124px] h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8] ">
             <thead className=" font-semibold text-base border-b border-[#E4E4E8]">
               <th className=" px-[16px] py-[14px] ">First Name</th>
               <th className='px-[16px]'>Last Name</th>
@@ -50,7 +50,7 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start ">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
@@ -67,7 +67,7 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
@@ -84,7 +84,7 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
@@ -101,7 +101,7 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
@@ -118,7 +118,7 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
@@ -135,7 +135,7 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
@@ -152,7 +152,7 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
@@ -169,7 +169,7 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
@@ -188,7 +188,7 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
@@ -207,14 +207,14 @@ const TeamData = () => {
                 <th className='px-[16px]'>Oct 12, 2022</th>
                 <th className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
-                    <FaRegPenToSquare />
+                    <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
                 </th>
               </tr>
             </tbody>
           </table>
-        </div>
+      
 
         <div className="flex items-center mt-4 justify-end">
           <IoIosArrowBack className="w-4 h-4 " />

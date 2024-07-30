@@ -53,20 +53,19 @@ const TicketsHero = ({children}) => {
             </div>
           </div>
         </div>
-        <div className="w-[1124px] h-[709px] rounded-xl border border-[#E4E4E7]">
-          <table className="w-[1108px] h-fit rounded-md bg-white border-b border-[#E4E4E8]">
+          <table className="w-[1124px] h-fit rounded-xl bg-white text-left border border-[#E4E4E8]">
             <thead className="font-semibold text-base border-b border-[#E4E4E8]">
-              <th className="px-[6px] py-[14px]">RMA</th>
-              <th>Status</th>
-              <th>Customer Email</th>
-              <th>Hardware</th>
-              <th>Updated at</th>
-              <th>Actions</th>
+              <th className="px-[16px] py-[14px]">RMA</th>
+              <th className='px-[16px]'>Status</th>
+              <th className='px-[16px]'>Customer Email</th>
+              <th className='px-[16px]'>Hardware</th>
+              <th className='px-[16px]'>Updated at</th>
+              <th className='px-[16px]'>Actions</th>
             </thead>
             <tbody className="font-normal text-xs text-[#52525B] ">
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754379...</th>
-            <th>
+            <th className='px-[16px]'>0011754379...</th>
+            <th className='px-[16px]'>
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#FECACA] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]">
                   {" "}
@@ -74,10 +73,10 @@ const TicketsHero = ({children}) => {
                 </p>
               </div>
             </th>
-            <th>georgia.young@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>georgia.young@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -85,17 +84,17 @@ const TicketsHero = ({children}) => {
             </th>
           </tr>
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754380...</th>
-            <th>
+            <th className='px-[16px]'>0011754380...</th>
+            <th className='px-[16px]'>
               {" "}
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#FED7AA] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]"> In-queue</p>
               </div>
             </th>
-            <th>bill.sanders@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>bill.sanders@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -103,8 +102,8 @@ const TicketsHero = ({children}) => {
             </th>
           </tr>
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754381...</th>
-            <th>
+            <th className='px-[16px]'>0011754381...</th>
+            <th className='px-[16px]'>
               {" "}
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#FDE68A] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]">
@@ -113,10 +112,10 @@ const TicketsHero = ({children}) => {
                 </p>
               </div>
             </th>
-            <th>michelle.rivera@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>michelle.rivera@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -124,8 +123,8 @@ const TicketsHero = ({children}) => {
             </th>
           </tr>
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754382...</th>
-            <th>
+            <th className='px-[16px]'>0011754382...</th>
+            <th className='px-[16px]'>
               {" "}
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#A7F3D0] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]">
@@ -134,10 +133,10 @@ const TicketsHero = ({children}) => {
                 </p>
               </div>
             </th>
-            <th>deanna.curtis@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>deanna.curtis@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -145,8 +144,8 @@ const TicketsHero = ({children}) => {
             </th>
           </tr>
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754382...</th>
-            <th>
+            <th className='px-[16px]'>0011754382...</th>
+            <th className='px-[16px]'>
               {" "}
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#99F6E4] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]">
@@ -155,10 +154,10 @@ const TicketsHero = ({children}) => {
                 </p>
               </div>
             </th>
-            <th>jackson.graham@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>jackson.graham@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -166,8 +165,8 @@ const TicketsHero = ({children}) => {
             </th>
           </tr>
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754382...</th>
-            <th>
+            <th className='px-[16px]'>0011754382...</th>
+            <th className='px-[16px]'>
               {" "}
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#A5F3FC] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]">
@@ -176,10 +175,10 @@ const TicketsHero = ({children}) => {
                 </p>
               </div>
             </th>
-            <th>sara.cruz@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>sara.cruz@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -187,8 +186,8 @@ const TicketsHero = ({children}) => {
             </th>
           </tr>
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754382...</th>
-            <th>
+            <th className='px-[16px]'>0011754382...</th>
+            <th className='px-[16px]'>
               {" "}
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#BAE6FD] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]">
@@ -197,10 +196,10 @@ const TicketsHero = ({children}) => {
                 </p>
               </div>
             </th>
-            <th>willie.jennings@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>willie.jennings@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -208,8 +207,8 @@ const TicketsHero = ({children}) => {
             </th>
           </tr>
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754382...</th>
-            <th>
+            <th className='px-[16px]'>0011754382...</th>
+            <th className='px-[16px]'>
               {" "}
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#C7D2FE] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]">
@@ -218,10 +217,10 @@ const TicketsHero = ({children}) => {
                 </p>
               </div>
             </th>
-            <th>curtis.weaver@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>curtis.weaver@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -229,17 +228,17 @@ const TicketsHero = ({children}) => {
             </th>
           </tr>
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754382...</th>
-            <th>
+            <th className='px-[16px]'>0011754382...</th>
+            <th className='px-[16px]'>
               {" "}
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#D9F99D] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]"> In-queue</p>
               </div>
             </th>
-            <th>jessica.hanson@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>jessica.hanson@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -247,8 +246,8 @@ const TicketsHero = ({children}) => {
             </th>
           </tr>
           <tr className=" border-b border-[#E4E4E8]">
-            <th>0011754382...</th>
-            <th>
+            <th className='px-[16px]'>0011754382...</th>
+            <th className='px-[16px]'>
               {" "}
               <div className="flex items-center  w-[118px] h-7 rounded-[31px] px-[6px] py-[14px] bg-[#DDD6FE] justify-center">
                 <p className=" font-medium text-xs text-[#18181B]">
@@ -257,10 +256,10 @@ const TicketsHero = ({children}) => {
                 </p>
               </div>
             </th>
-            <th>debbie.baker@example.com</th>
-            <th>Starlight-12 Poseidon</th>
-            <th>15 May 2020 8:30 am</th>
-            <th>
+            <th className='px-[16px]'>debbie.baker@example.com</th>
+            <th className='px-[16px]'>Starlight-12 Poseidon</th>
+            <th className='px-[16px]'>15 May 2020 8:30 am</th>
+            <th className='px-[16px]'>
               <div className="flex text-[20px] px-7 py-[21.5px] justify-around items-center">
                 <GoEye />
                 <FaRegPenToSquare />
@@ -269,7 +268,7 @@ const TicketsHero = ({children}) => {
           </tr>
         </tbody>
           </table>
-        </div>
+        
         <div className='flex items-center mt-4 justify-end'>
           <IoIosArrowBack className='w-4 h-4 '/>
           <p className='text-[#D4D4D8] text-sm font-medium mx-3'>Previous</p>
