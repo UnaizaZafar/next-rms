@@ -15,7 +15,7 @@ const page = () => {
           <div>
             <TopBar heading="Analytics"/>
           </div>
-          <div className="mt-6 mx-7">
+          <div className="py-5 px-6 bg-[#FAFAFA]">
             <Hero/>
           </div>
         </div>

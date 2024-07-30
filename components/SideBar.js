@@ -71,7 +71,7 @@ const SideBar = () => {
               {" "}
               <div className="flex items-center py-3 px-4 ">
                 <IoSettingsOutline />
-                <Link href="/" className="mx-2 text-[#A1A1AA]">
+                <Link href="/settings-page" className="mx-2 text-[#A1A1AA]">
                   Settings
                 </Link>{" "}
               </div>
@@ -80,7 +80,7 @@ const SideBar = () => {
               {" "}
               <div className="flex items-center py-3 px-4 ">
                 <CiShoppingTag />
-                <Link href="/" className="mx-2 text-[#A1A1AA]">
+                <Link href="/tag-manager-page" className="mx-2 text-[#A1A1AA]">
                   Tag Manager
                 </Link>{" "}
               </div>
@@ -89,7 +89,7 @@ const SideBar = () => {
               {" "}
               <div className="flex items-center py-3 px-4 ">
                 <MdOutlineLayers />
-                <Link href="/" className="mx-2 text-[#A1A1AA]">
+                <Link href="/widgets-page" className="mx-2 text-[#A1A1AA]">
                   Widgets
                 </Link>{" "}
               </div>

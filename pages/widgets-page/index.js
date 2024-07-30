@@ -16,7 +16,7 @@ const index = () => {
           <div>
             <TopBar heading='Tickets'/>
           </div>
-          <div className="py-8 px-7 bg-[#FAFAFA]">
+          <div className="py-5 px-6 bg-[#FAFAFA]">
            <Widgets/>
          
           </div>
