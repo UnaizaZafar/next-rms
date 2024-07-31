@@ -7,19 +7,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className="flex font-[Manrope]">
-        <div>
-          <SideBar />
-        </div>
-        <div className="flex flex-col">
-          <div>
-            <TopBar heading="Analytics"/>
-          </div>
-          <div className="py-5 px-6 bg-[#FAFAFA]">
-            <Hero/>
-          </div>
-        </div>
-      </div>
+      <Hero />
     </>
   );
 };

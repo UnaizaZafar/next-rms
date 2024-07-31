@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <>
       <div>
-        <div className="w-[1200px]  rounded-xl bg-black">
+        <div className="w-[1124px]  rounded-xl bg-black">
           <div className="w-[400px] text-white p-5 grid gap-4">
             <h1 className="font-extrabold text-2xl">Welcome Back</h1>
             <p className="font-medium text-base text-[#FAFAFA99] ">
@@ -19,13 +19,12 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div className="py-6 flex items-center">
+        <div className="py-6 flex items-center w-[1124px]">
           <h1 className="text-2xl font-extrabold">Ticket Stats:</h1>
-          <hr className="mx-4 w-[1000px]" />
+          <hr className=" w-[960px]" />
         </div>
-        <div className="flex justify-between">
-          <Cards heading="Summary">
-            {/* <h1 className='font-extrabold text-xl'>Summary</h1> */}
+        <div className="flex justify-between w-[1124px]">
+          <Cards heading="Summary " className='px-7 py-6'>
             <div className="flex flex-col">
               <div className="my-2">
                 <div className=" flex justify-between items-center rounded-md w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
