@@ -1,7 +1,8 @@
 import React from 'react'
 import SideBar from '../../components/SideBar'
 import TopBar from '../../components/TopBar'
-import tagManager from '../../components/tagManager'
+import TagManager from '../../components/TagManager'
+
 
 
 const index = () => {
@@ -16,7 +17,7 @@ const index = () => {
             <TopBar heading='Tags'/>
           </div>
           <div className="py-5 px-6 bg-[#FAFAFA]">
-           <tagManager/>
+           <TagManager/>
           </div>
         </div>
       </div>
