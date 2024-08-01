@@ -1,5 +1,5 @@
 import React from "react";
-import TagsManager from "@/components/tagsManager";
+import TagsManager from "@/components/TagsManager";
 const Index = () => {
   return (
     <>
