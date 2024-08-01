@@ -2,7 +2,7 @@ import React from "react";
 
 import Diagnosis from "@/components/Diagnosis";
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <Diagnosis />
@@ -10,4 +10,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

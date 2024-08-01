@@ -1,6 +1,6 @@
 import React from "react";
 import TagsManager from "@/components/tagsManager";
-const index = () => {
+const Index = () => {
   return (
     <>
       <TagsManager/>
@@ -8,4 +8,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

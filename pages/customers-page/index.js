@@ -2,7 +2,7 @@ import React from "react";
 
 import Customers from "@/components/Customers";
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <Customers />
@@ -10,4 +10,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

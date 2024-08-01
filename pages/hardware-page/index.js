@@ -2,7 +2,7 @@ import React from "react";
 
 import Hardware from "@/components/Hardware";
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <Hardware />
@@ -10,4 +10,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

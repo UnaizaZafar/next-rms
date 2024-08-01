@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 
 import React from "react";
 
-const page = () => {
+const Index = () => {
   return (
     <>
       <Hero />
@@ -12,4 +12,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Index;

@@ -1,7 +1,7 @@
 import React from "react";
 import TeamData from "@/components/TeamData";
 
-const index = () => {
+const Index = () => {
   return (
     <>
    
@@ -10,4 +10,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

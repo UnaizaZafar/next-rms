@@ -2,7 +2,7 @@ import React from "react";
 import TicketsHero from "../../components/TicketsHero";
 import TicketNoData from "@/components/TicketNoData";
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <TicketsHero />
@@ -11,4 +11,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
