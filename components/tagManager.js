@@ -2,7 +2,7 @@ import React from "react";
 import { IoIosSearch } from "react-icons/io";
 import { FiPlusCircle } from "react-icons/fi";
 
-const tagManager = () => {
+const TagManager = () => {
   return (
     <>
       <div className="flex  justify-end ">
@@ -73,4 +73,4 @@ const tagManager = () => {
   );
 };
 
-export default tagManager;
+export default TagManager;
