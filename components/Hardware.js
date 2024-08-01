@@ -29,12 +29,14 @@ const Hardware = () => {
 
         <table className=" w-[1124px] h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8] ">
           <thead className=" font-semibold text-base border-b border-[#E4E4E8]">
+            <tr>
             <th className=" px-[16px]  "> </th>
             <th className="px-[16px] py-[14px]">Hardware Type</th>
             <th className="px-[16px]">Model</th>
 
             <th className="px-[16px]">Date Added</th>
             <th className="px-[16px]">Actions</th>
+            </tr>
           </thead>
           <tbody className="font-normal text-xs text-[#52525B] ">
             <tr className=" border-b border-[#E4E4E8]">

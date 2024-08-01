@@ -4,6 +4,7 @@ import TeamData from "@/components/TeamData";
 const index = () => {
   return (
     <>
+   
       <TeamData />
     </>
   );

@@ -1,7 +1,7 @@
 import React from 'react'
 import LeftFrame from '@/components/LeftFrame';
 import RightFrame from "@/components/RightFrame";
-const Login = () => {
+const Index = () => {
   return (
    <>
    <div className="flex">
@@ -16,4 +16,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Index

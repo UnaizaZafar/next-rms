@@ -28,189 +28,191 @@ const TeamData = () => {
         
           <table className=" w-[1124px] h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8] ">
             <thead className=" font-semibold text-base border-b border-[#E4E4E8]">
+              <tr>
               <th className=" px-[16px] py-[14px] ">First Name</th>
               <th className='px-[16px]'>Last Name</th>
               <th className='px-[16px]'>Email</th>
               <th className='px-[16px]'>Role</th>
               <th className='px-[16px]'>Date created</th>
               <th className='px-[16px]'>Actions</th>
+              </tr>
             </thead>
             <tbody className="font-normal text-xs text-[#52525B] ">
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Eduardo</th>
-                <th className='px-[16px]'>Lane</th>
-                <th className='px-[16px]'>georgia.young@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Eduardo</td>
+                <td className='px-[16px]'>Lane</td>
+                <td className='px-[16px]'>georgia.young@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">
                       Technician
                     </p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start ">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Kristin</th>
-                <th className='px-[16px]'>Fox</th>
-                <th className='px-[16px]'>bill.sanders@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Kristin</td>
+                <td className='px-[16px]'>Fox</td>
+                <td className='px-[16px]'>bill.sanders@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Angel</th>
-                <th className='px-[16px]'>Edwards</th>
-                <th className='px-[16px]'>michelle.rivera@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Angel</td>
+                <td className='px-[16px]'>Edwards</td>
+                <td className='px-[16px]'>michelle.rivera@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">Admin</p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Cameron</th>
-                <th className='px-[16px]'>Richards</th>
-                <th className='px-[16px]'>deanna.curtis@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Cameron</td>
+                <td className='px-[16px]'>Richards</td>
+                <td className='px-[16px]'>deanna.curtis@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Cody</th>
-                <th className='px-[16px]'>Warren</th>
-                <th className='px-[16px]'>jackson.graham@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Cody</td>
+                <td className='px-[16px]'>Warren</td>
+                <td className='px-[16px]'>jackson.graham@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Philip</th>
-                <th className='px-[16px]'>Lane</th>
-                <th className='px-[16px]'>sara.cruz@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Philip</td>
+                <td className='px-[16px]'>Lane</td>
+                <td className='px-[16px]'>sara.cruz@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Arthur</th>
-                <th className='px-[16px]'>Edwards</th>
-                <th className='px-[16px]'>willie.jennings@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Arthur</td>
+                <td className='px-[16px]'>Edwards</td>
+                <td className='px-[16px]'>willie.jennings@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Max</th>
-                <th className='px-[16px]'>Fox</th>
-                <th className='px-[16px]'>curtis.weaver@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Max</td>
+                <td className='px-[16px]'>Fox</td>
+                <td className='px-[16px]'>curtis.weaver@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Leslie</th>
-                <th className='px-[16px]'>Richards</th>
-                <th className='px-[16px]'>jessica.hanson@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Leslie</td>
+                <td className='px-[16px]'>Richards</td>
+                <td className='px-[16px]'>jessica.hanson@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">
                       Technician
                     </p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
               <tr className=" border-b border-[#E4E4E8]">
-                <th className='px-[16px]'>Darrel</th>
-                <th className='px-[16px]'>Hawkins</th>
-                <th className='px-[16px]'>debbie.baker@example.com</th>
-                <th className='px-[16px]'>
+                <td className='px-[16px]'>Darrel</td>
+                <td className='px-[16px]'>Hawkins</td>
+                <td className='px-[16px]'>debbie.baker@example.com</td>
+                <td className='px-[16px]'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">
                       Technician
                     </p>
                   </div>
-                </th>
-                <th className='px-[16px]'>Oct 12, 2022</th>
-                <th className=''>
+                </td>
+                <td className='px-[16px]'>Oct 12, 2022</td>
+                <td className=''>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
                   </div>
-                </th>
+                </td>
               </tr>
             </tbody>
           </table>
