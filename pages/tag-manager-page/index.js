@@ -1,9 +1,9 @@
 import React from "react";
-import TagManager from "@/components/TagManager";
+import TagsManager from "@/components/tagsManager";
 const index = () => {
   return (
     <>
-      <TagManager/>
+      <TagsManager/>
     </>
   );
 };

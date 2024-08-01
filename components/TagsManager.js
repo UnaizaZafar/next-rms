@@ -2,7 +2,7 @@ import React from "react";
 import { IoIosSearch } from "react-icons/io";
 import { FiPlusCircle } from "react-icons/fi";
 
-const TagManager = () => {
+const TagsManager = () => {
   return (
     <>
       <div className="flex  justify-end ">
@@ -29,39 +29,26 @@ const TagManager = () => {
               Mouse
             </div>
             <div className="w-21 h-10 rounded-md border text-base font-normal border-[#E4E4E7] m-2 items-center justify-center flex py-3 px-4 text-[#18181B] bg-[#E4E4E7]">
-              
-                Keyboard
-              
+              Keyboard
             </div>
             <div className="w-21 h-10 rounded-md border text-base font-normal border-[#E4E4E7] m-2 items-center justify-center flex py-3 px-4 text-[#18181B] bg-[#E4E4E7]">
-              
-                Scroll
-              
+              Scroll
             </div>
             <div className="w-21 h-10 rounded-md border text-base font-normal border-[#E4E4E7] m-2 items-center justify-center flex py-3 px-4 text-[#18181B] bg-[#E4E4E7]">
-              
-                Sensitivity
-              
+              Sensitivity
             </div>{" "}
             <div className="w-21 h-10 rounded-md border text-base font-normal border-[#E4E4E7] m-2 items-center justify-center flex py-3 px-4 text-[#18181B] bg-[#E4E4E7]">
-              
-                Click
-              
+              Click
             </div>{" "}
             <div className="w-21 h-10 rounded-md border text-base font-normal border-[#E4E4E7] m-2 items-center justify-center flex py-3 px-4 text-[#18181B] bg-[#E4E4E7]">
-              
-                Movement
-              
+              Movement
             </div>
             <div className="w-21 h-10 rounded-md border text-base font-normal border-[#E4E4E7] m-2 items-center justify-center flex py-3 px-4 text-[#18181B] bg-[#E4E4E7]">
-              
-                Button
-              
+              Button
             </div>
             <div className=" w-max h-10 rounded-md border-2 border-dashed text-base font-normal border-[#18181B] m-2 items-center justify-center flex py-3 px-4 text-[#18181B] ">
-               <FiPlusCircle className='text-base'/>
-                Add New Tag
-              
+              <FiPlusCircle className="text-base" />
+              Add New Tag
             </div>
           </div>
         </div>
@@ -73,4 +60,4 @@ const TagManager = () => {
   );
 };
 
-export default TagManager;
+export default TagsManager;
