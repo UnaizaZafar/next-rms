@@ -60,8 +60,8 @@ const Widgets = () => {
             </div>
           </div>
         
-        <div className="flex justify-between gap-4">
-          <div className="w-full max-w-[600px] h-full rounded-xl border p-6 bg-white border[-#E4E4E7] ">
+        <div className="flex justify-between gap-3">
+          <div className="w-full  h-full rounded-xl border p-6 bg-white border[-#E4E4E7] ">
             <h1 className="font-bold text-xl text-[#18181B] pb-4">
               Add Widgets
             </h1>
@@ -111,7 +111,7 @@ const Widgets = () => {
               </div>
             </form>
           </div>
-          <div className="w-full max-w-[600px] h-full min-h-[358px] rounded-xl border p-6 bg-white border[-#E4E4E7]">
+          <div className="w-full  h-full min-h-[358px] rounded-xl border p-6 bg-white border[-#E4E4E7]">
             <h1 className="font-bold text-xl text-[#18181B]">Added Widgets</h1>
             <div>
               <table className="w-full h-full rounded-xl bg-white text-left border border-[#E4E4E8] mt-[16px] ">
