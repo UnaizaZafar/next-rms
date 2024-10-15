@@ -3,7 +3,7 @@ const DeleteModal = ({ isVisible, onClose }) => {
   const handleClose = (e) => {
     if (e.target.id === "wrapper") onClose();
   };
-  
+
   return (
     <div
       onClick={handleClose}
@@ -19,8 +19,18 @@ const DeleteModal = ({ isVisible, onClose }) => {
         >
           X
         </button>
-        <div className=" rounded-xl flex justify-between bg-white w-full">
-         Modal
+        <div className=" rounded-xl flex flex-col p-6 gap-3 justify-center bg-white w-full">
+          dustbin
+          <h1 className="font-semibold text-lg text-center">Confirm Delete?</h1>
+          <p className="text-center text-sm font-normal ">
+            This action is irreversible and can’t be undone. Do you wish to
+            proceed?
+          </p>
+          <div className="flex gap-3 items-center justify-center">
+            <button className="rounded-md py-3 px-4 font-semibold text-sm border border-black">Cancel</button>
+            <button className="rounded-md py-3 px-4 font-semibold text-sm bg-[#E11D48] text-white">Yes, Delete Now</button>
+
+          </div>
         </div>
       </div>
     </div>
