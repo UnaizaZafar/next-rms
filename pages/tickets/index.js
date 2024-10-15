@@ -5,8 +5,8 @@ import TicketNoData from "@/components/TicketNoData";
 const Index = () => {
   return (
     <>
-      <TicketsHero />
-      {/* <TicketNoData/> */}
+      {/* <TicketsHero /> */}
+      <TicketNoData/>
     </>
   );
 };

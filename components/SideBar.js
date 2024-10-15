@@ -19,11 +19,11 @@ const SideBar = () => {
 
   return (
     <>
-      <div className="bg-[#18181B] flex-col flex items-center p-10  w-[260px] h-[1024px]">
-        <div className="p-3 mb-14">
-          <Image alt=""src={logo} width={50} height={44} alt="Logo" />
+      <div className="bg-[#18181B] flex-col flex gap-12 items-center p-10 w-full max-w-[260px] h-full">
+        <div className="p-3">
+          <Image src={logo} width={50} height={44} alt="Logo" />
         </div>
-        <div className="flex flex-col justify-between h-[1140px]  text-white w-56 font-[Manrope] font-normal text px-0 py-4">
+        <div className="flex flex-col justify-between  text-white w-56 font-[Manrope] font-normal text px-0 py-4">
           <div className="flex flex-col ">
             <div className=" h-10">
               {" "}
@@ -147,13 +147,13 @@ const SideBar = () => {
             </div>
           </div>
 
-          <div className=" flex flex-col items-center self-center text-[#A1A1AA]">
+          <div className=" flex flex-col gap-8 items-center self-center text-[#A1A1AA]">
             <Image
               src={TicketsResolvedImg}
               width="180px"
               height="180px"
             ></Image>
-            <div className="flex  items-center self-center mt-8 ">
+            <div className="flex  items-center self-center  ">
               <GrLogout />
               <Link href="/" className="mx-2 text-[#A1A1AA]">
                 <h1 className="font-normaltext-base mx-2">Logout</h1>{" "}

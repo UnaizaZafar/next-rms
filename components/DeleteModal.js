@@ -1,6 +1,6 @@
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-const DeleteModal = ({ isVisible, onClose }) => {
+const DeleteModal = ({ isVisible, onClose,handleDelete,DeleteIndex }) => {
   if (!isVisible) return null;
   const handleClose = (e) => {
     if (e.target.id === "wrapper") onClose();
@@ -37,7 +37,8 @@ const DeleteModal = ({ isVisible, onClose }) => {
             >
               Cancel
             </button>
-            <button className="rounded-md py-3 px-4 font-semibold text-sm bg-[#E11D48] text-white">
+            <button onClick={()=>{handleDelete(DeleteIndex); onClose();}} className="rounded-md py-3 px-4 font-semibold text-sm bg-[#E11D48] text-white">
+                 
               Yes, Delete Now
             </button>
           </div>
