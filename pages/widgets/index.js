@@ -5,7 +5,8 @@ import Widgets from "../../components/Widgets";
 const Index = () => {
   return (
     <>
-      <Widgets />
+         <Widgets />
+   
     </>
   );
 };

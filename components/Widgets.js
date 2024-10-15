@@ -47,7 +47,7 @@ const Widgets = () => {
     <>
       <Fragment>
         <div className="flex flex-col gap-4 justify-end ">
-          <div className="flex items-center  place-self-end justify-between border rounded-md p-4 border-[#E4E4E7] w-[310px] h-12 bg-white ">
+          <div className="flex items-center  place-self-end justify-between border rounded-md p-4 border-[#E4E4E7] w-full max-w-[310px] h-12 bg-white ">
             <div
               type="text"
               placeholder=""
