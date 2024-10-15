@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import "@/styles/globals.css";
-import Login from "./login-page";
+import Login from "./login";
 import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {

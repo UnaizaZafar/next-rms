@@ -21,7 +21,7 @@ const SideBar = () => {
     <>
       <div className="bg-[#18181B] flex-col flex items-center p-10  w-[260px] h-[1024px]">
         <div className="p-3 mb-14">
-          <Image src={logo} width={50} height={44} alt="Logo" />
+          <Image alt=""src={logo} width={50} height={44} alt="Logo" />
         </div>
         <div className="flex flex-col justify-between h-[1140px]  text-white w-56 font-[Manrope] font-normal text px-0 py-4">
           <div className="flex flex-col ">
@@ -29,11 +29,11 @@ const SideBar = () => {
               {" "}
               <Link
                 className={`link ${
-                  pathname === "/analytics-page"
+                  pathname === "/analytics"
                     ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
                     : "no-underline bg-transparent  flex items-center  py-3 px-4 text-[#A1A1AA] "
                 }`}
-                href="/analytics-page"
+                href="/analytics"
               >
                 <VscGraph className="text-[16px] mx-2" />
                 <p>Analytics</p>
@@ -44,11 +44,11 @@ const SideBar = () => {
               <div className="h-10">
                 <Link
                   className={`link ${
-                    pathname === "/tickets-page"
+                    pathname === "/tickets"
                       ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
                       : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
                   }`}
-                  href="/tickets-page"
+                  href="/tickets"
                 >
                   {" "}
                   <FaTicketSimple className="text-[16px] mx-2" />
@@ -60,11 +60,11 @@ const SideBar = () => {
               {" "}
               <Link
                 className={`link ${
-                  pathname === "/customers-page"
+                  pathname === "/customers"
                     ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
                     : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
                 }`}
-                href="/customers-page"
+                href="/customers"
               >
                 <PiPersonThin className="text-[16px] mx-2" />
                 Customers
@@ -75,11 +75,11 @@ const SideBar = () => {
               {" "}
               <Link
                 className={`link ${
-                  pathname === "/hardware-page"
+                  pathname === "/hardware"
                     ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
                     : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
                 }`}
-                href="/hardware-page"
+                href="/hardware"
               >
                 <IoHardwareChipOutline className="text-[16px] mx-2" />
                 Hardware
@@ -90,11 +90,11 @@ const SideBar = () => {
               {" "}
               <Link
                 className={`link ${
-                  pathname === "/team-page"
+                  pathname === "/team"
                     ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
                     : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
                 }`}
-                href="/team-page"
+                href="/team"
               >
                 <GoPeople className="text-[16px] mx-2" />
                 Team
@@ -120,11 +120,11 @@ const SideBar = () => {
               {" "}
               <Link
                 className={`link ${
-                  pathname === "/tag-manager-page"
+                  pathname === "/tag-manager"
                     ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
                     : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
                 }`}
-                href="/tag-manager-page"
+                href="/tag-manager"
               >
                 <CiShoppingTag className="text-[16px] mx-2" />
                 Tag Manager
@@ -135,11 +135,11 @@ const SideBar = () => {
               {" "}
               <Link
                 className={`link ${
-                  pathname === "/widgets-page"
+                  pathname === "/widgets"
                     ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
                     : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
                 }`}
-                href="/widgets-page"
+                href="/widgets"
               >
                 <MdOutlineLayers className="text-[16px] mx-2" />
                 Widgets

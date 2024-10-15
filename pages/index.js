@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 
 import React from "react";
-import loginPage from './login-page'
+import loginPage from './login'
 import Hardware from "@/components/Hardware";
 
 

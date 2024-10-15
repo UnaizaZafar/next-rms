@@ -9,7 +9,7 @@ const LeftFrame = () => {
   return (
     <>
     <div className="flex bg-slate-50 flex-col items-center p-5 h-[1024px] justify-center">
-      <Image src={logo} width={60} height={44} alt="logo" />
+      <Image alt=""src={logo} width={60} height={44} alt="logo" />
       <h1 className="text-3xl font-bold p-3">Login to your account</h1>
       <p className="font-normal text-xs">
         Please login to get access to the dashboard.

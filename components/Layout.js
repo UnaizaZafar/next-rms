@@ -8,23 +8,23 @@ const Layout = ({ children }) => {
 
   const getTopBarHeading = () => {
     switch (router.pathname) {
-      case "/team-page":
+      case "/team":
         return "Team";
-      case "/tickets-page":
+      case "/tickets":
         return "Tickets";
-      case "/analytics-page":
+      case "/analytics":
         return "Analytics";
-      case "/customers-page":
+      case "/customers":
         return "Customers";
-      case "/diagnosis-page":
+      case "/diagnosis":
         return "Diagnosis";
-      case "/hardware-page":
+      case "/hardware":
         return "Hardware";
-      case "/settings-page":
+      case "/settings":
         return "Settings";
-        case "/tag-manager-page":
+        case "/tag-manager":
           return "Tag Manager";
-          case "/widgets-page":
+          case "/widgets":
             return "Widgets";
       default:
         return "Welcome"; 
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
     <>
       <div className="flex font-[Manrope]">
         <SideBar />
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           <TopBar heading={getTopBarHeading()} />
 
           <div className="py-5 px-6 bg-[#FAFAFA]">{children}</div>

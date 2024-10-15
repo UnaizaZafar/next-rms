@@ -140,7 +140,7 @@ const Hero = () => {
             <div>
               <h1 className="font-medium text-sm">Total issues: 6</h1>
               <div className="flex justify-center mt-4">
-                <Image src={pieGraph} width="200px" height="200px"></Image>
+                <Image alt=""src={pieGraph} width="200px" height="200px"></Image>
               </div>
             </div>
           </Cards>
@@ -163,7 +163,7 @@ const Hero = () => {
             <div>
               <h1 className="font-medium text-sm">Total issues: 6</h1>
               <div className="mt-4">
-                <Image src={issuesGraph} width="313px" height="198px"></Image>
+                <Image alt=""src={issuesGraph} width="313px" height="198px"></Image>
               </div>
             </div>
           </Cards>

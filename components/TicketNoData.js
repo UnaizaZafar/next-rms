@@ -65,7 +65,7 @@ const TicketNoData = () => {
           <tbody className='flex items-center justify-center p-10'>
             <tr>
               <td >
-                <Image src={NoData} width="270px" height="216px" ></Image>
+                <Image alt=""src={NoData} width="270px" height="216px" ></Image>
                 <br /><p className='text-center font-extrabold text-xl mt-3'>No Data Found</p>
                
               </td>{" "}
