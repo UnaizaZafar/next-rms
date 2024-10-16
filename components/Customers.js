@@ -7,7 +7,7 @@ import { MdNavigateNext } from "react-icons/md";
 const Customers = () => {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full">
         <div className="flex  justify-end">
           <div className="flex items-center justify-between border rounded-md p-4 border-[#E4E4E7] w-[310px] h-12 bg-white ">
             <div
@@ -22,7 +22,7 @@ const Customers = () => {
             </div>
           </div>
         </div>
-        <table className=" w-[1124px] h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8]">
+        <table className=" w-full h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8]">
           <thead className=" font-semibold text-base border-b border-[#E4E4E8]">
             <tr>
             <th className=" px-[16px] ">  </th>

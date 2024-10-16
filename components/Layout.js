@@ -22,22 +22,21 @@ const Layout = ({ children }) => {
         return "Hardware";
       case "/settings":
         return "Settings";
-        case "/tag-manager":
-          return "Tag Manager";
-          case "/widgets":
-            return "Widgets";
+      case "/tag-manager":
+        return "Tag Manager";
+      case "/widgets":
+        return "Widgets";
       default:
-        return "Welcome"; 
+        return "Welcome";
     }
   };
 
   return (
     <>
-      <div className="flex font-[Manrope]">
+      <div className="flex font-[Manrope] h-full">
         <SideBar />
         <div className="flex flex-col w-full">
           <TopBar heading={getTopBarHeading()} />
-
           <div className="py-5 px-6 bg-[#FAFAFA]">{children}</div>
         </div>
       </div>

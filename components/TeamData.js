@@ -8,7 +8,7 @@ const TeamData = () => {
   return (
     <>
       <div>
-        <div className="flex  justify-between">
+        <div className="flex  justify-between w-full">
           <div className="bg-[#18181B] w-[131px] h-[45px] rounded-md flex justify-center items-center">
             <p className="text-white font-medium text-sm ">Add Member</p>
           </div>
@@ -26,7 +26,7 @@ const TeamData = () => {
           </div>
         </div>
         
-          <table className=" w-[1124px] h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8] ">
+          <table className=" w-full h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8] ">
             <thead className=" font-semibold text-base border-b border-[#E4E4E8]">
               <tr>
               <th className=" px-[16px] py-[14px] ">First Name</th>

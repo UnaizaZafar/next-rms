@@ -59,129 +59,129 @@ const Widgets = () => {
               <IoIosSearch className="text-base" />
             </div>
           </div>
-        
-        <div className="flex justify-between gap-3">
-          <div className="w-full  h-full rounded-xl border p-6 bg-white border[-#E4E4E7] ">
-            <h1 className="font-bold text-xl text-[#18181B] pb-4">
-              Add Widgets
-            </h1>
-            <form onSubmit={handleSubmit}>
-              <div className="flex flex-col">
-                <label
-                  htmlFor="Name"
-                  className="font-semibold text-sm text-[#18181B]"
-                >
-                  Name
-                </label>
-                <input
-                  value={formData.name}
-                  onChange={(e) => handleValues("name", e.target.value)}
-                  type="text"
-                  name="name"
-                  required
-                  className="text-xs font-normal text-[#A1A1AA] w-full h-[42px] my-2 rounded-md border py-3 px-4 border-[#E4E4E7] bg-white"
-                  placeholder="Enter name"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label
-                  htmlFor="URL"
-                  className="font-semibold text-sm text-[#18181B] mt-4"
-                >
-                  URL
-                </label>
-                <input
-                  value={formData.url}
-                  onChange={(e) => handleValues("url", e.target.value)}
-                  type="text"
-                  required
-                  name="url"
-                  className="text-xs font-normal text-[#A1A1AA] w-full h-[42px] my-2 rounded-md border py-3 px-4 border-[#E4E4E7] bg-white"
-                  placeholder="Enter URL of the website"
-                />
-              </div>
 
-              <div className="flex justify-end my-6 bg-[#18181B] w-full max-w-[124px] h-[45px] rounded-md py-3 px-6 items-center">
-                <button
-                  type="submit"
-                  className={` text-white font-medium text-sm`} 
-                >
-                  Add Widget
-                </button>
-              </div>
-            </form>
-          </div>
-          <div className="w-full  h-full min-h-[358px] rounded-xl border p-6 bg-white border[-#E4E4E7]">
-            <h1 className="font-bold text-xl text-[#18181B]">Added Widgets</h1>
-            <div>
-              <table className="w-full h-full rounded-xl bg-white text-left border border-[#E4E4E8] mt-[16px] ">
-                <thead className="font-semibold text-base border-b border-[#E4E4E8]">
-                  <tr>
-                    <th  className="px-[16px] py-[14px] w-[385px]">Website</th>
-                    <th  className="px-[16px]  w-[99px]">Actions</th>
-                  </tr>
-                </thead>
+          <div className="flex justify-between gap-3">
+            <div className="w-full  h-full rounded-xl border p-6 bg-white border[-#E4E4E7] ">
+              <h1 className="font-bold text-xl text-[#18181B] pb-4">
+                Add Widgets
+              </h1>
+              <form onSubmit={handleSubmit}>
+                <div className="flex flex-col">
+                  <label
+                    htmlFor="Name"
+                    className="font-semibold text-sm text-[#18181B]"
+                  >
+                    Name
+                  </label>
+                  <input
+                    value={formData.name}
+                    onChange={(e) => handleValues("name", e.target.value)}
+                    type="text"
+                    name="name"
+                    required
+                    className="text-xs font-normal text-[#A1A1AA] w-full h-[42px] my-2 rounded-md border py-3 px-4 border-[#E4E4E7] bg-white"
+                    placeholder="Enter name"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <label
+                    htmlFor="URL"
+                    className="font-semibold text-sm text-[#18181B] mt-4"
+                  >
+                    URL
+                  </label>
+                  <input
+                    value={formData.url}
+                    onChange={(e) => handleValues("url", e.target.value)}
+                    type="text"
+                    required
+                    name="url"
+                    className="text-xs font-normal text-[#A1A1AA] w-full h-[42px] my-2 rounded-md border py-3 px-4 border-[#E4E4E7] bg-white"
+                    placeholder="Enter URL of the website"
+                  />
+                </div>
 
-                <tbody className="font-normal text-xs text-[#52525B] w-full">
-                  {widgetList.length === 0 ? (
-                    <tr className=" p-4 w-full">
-                      <th
-                        colSpan={2}
-                        className="flex flex-col gap-3 items-center justify-center w-full"
-                      >
-                        <Image
-                          alt=""
-                          src={NoData}
-                          width={210}
-                          height="216px"
-                        />
-                        <p className="font-bold text-lg">No Data Found</p>
-                      </th>
-                    </tr>
-                  ) : (
-                    <>
-                      {widgetList.map((widget, index) => (
-                        <tr className="w-full" key={index}>
-                          <td className="px-[16px] w-full max-w-[224px] py-[21.5px]">
-                            {widget.url}
-                          </td>
-                          <td>
-                            <div className="flex text-[20px] ">
-                              <button
-                                onClick={() => {
-                                  navigator.clipboard.writeText(widget.url);
-                                  alert("URl copied")
-                                  // <Alert severity="success">This is a success Alert.</Alert>
-                                }}
-                              >
-                                {" "}
-                                <IoCopyOutline className="mx-3" />
-
-                              </button>
-                              <button
-                                onClick={() => {
-                                  handleOpenModal(index);
-                                }}
-                              >
-                                <RiDeleteBin6Line />
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                      ))}
-                    </>
-                  )}
-                </tbody>
-              </table>
+                <div className="flex justify-end my-6 bg-[#18181B] w-full max-w-[124px] h-[45px] rounded-md py-3 px-6 items-center">
+                  <button
+                    type="submit"
+                    className={` text-white font-medium text-sm`}
+                  >
+                    Add Widget
+                  </button>
+                </div>
+              </form>
             </div>
+            <div className="w-full  h-full min-h-[358px] rounded-xl border p-6 bg-white border[-#E4E4E7]">
+              <h1 className="font-bold text-xl text-[#18181B]">
+                Added Widgets
+              </h1>
+              <div>
+                <table className="w-full h-full rounded-xl bg-white text-left border border-[#E4E4E8] mt-[16px] ">
+                  <thead className="font-semibold text-base border-b border-[#E4E4E8]">
+                    <tr>
+                      <th className="px-[16px] py-[14px] w-[385px]">Website</th>
+                      <th className="px-[16px]  w-[99px]">Actions</th>
+                    </tr>
+                  </thead>
+
+                  <tbody className="font-normal text-xs text-[#52525B] w-full">
+                    {widgetList.length === 0 ? (
+                      <tr className=" p-4 w-full">
+                        <td colSpan={2}>
+                          <div className="flex flex-col gap-3 items-center justify-center w-full">
+                            <Image
+                              alt=""
+                              src={NoData}
+                              width={210}
+                              height="216px"
+                            />
+                            <p className="font-bold text-lg">No Data Found</p>
+                          </div>
+                        </td>
+                      </tr>
+                    ) : (
+                      <>
+                        {widgetList.map((widget, index) => (
+                          <tr className="w-full" key={index}>
+                            <td className="px-[16px] w-full max-w-[224px] py-[21.5px]">
+                              {widget.url}
+                            </td>
+                            <td>
+                              <div className="flex text-[20px] ">
+                                <button
+                                  onClick={() => {
+                                    navigator.clipboard.writeText(widget.url);
+                                    alert("URl copied");
+                                    // <Alert severity="success">This is a success Alert.</Alert>
+                                  }}
+                                >
+                                  {" "}
+                                  <IoCopyOutline className="mx-3" />
+                                </button>
+                                <button
+                                  onClick={() => {
+                                    handleOpenModal(index);
+                                  }}
+                                >
+                                  <RiDeleteBin6Line />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        ))}
+                      </>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <DeleteModal
+              isVisible={showModal}
+              handleDelete={handleDeleteWidget}
+              DeleteIndex={selectedWidgetIndex}
+              onClose={() => setShowModal(false)}
+            />
           </div>
-          <DeleteModal
-            isVisible={showModal}
-            handleDelete={handleDeleteWidget}
-            DeleteIndex={selectedWidgetIndex}
-            onClose={() => setShowModal(false)}
-          />
-        </div>
         </div>
       </Fragment>
     </>

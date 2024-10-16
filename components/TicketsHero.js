@@ -9,8 +9,8 @@ import { IoIosArrowBack } from "react-icons/io";
 const TicketsHero = ({children}) => {
   return (
     <>
-      <div className="m-0 p-0 ">
-        <div className="flex justify-between text-[#18181B] m-4">
+      <div className="m-0 p-0 flex flex-col gap-4 w-full">
+        <div className="flex justify-between text-[#18181B] ">
           <div className="flex font-normal text-sm border-b">
             <Link href="" className="font-bold  m-2">
               All
@@ -53,7 +53,7 @@ const TicketsHero = ({children}) => {
             </div>
           </div>
         </div>
-          <table className="w-[1124px] h-fit rounded-xl bg-white text-left border border-[#E4E4E8]">
+          <table className="w-full h-fit rounded-xl bg-white text-left border border-[#E4E4E8]">
             <thead className="font-semibold text-base border-b border-[#E4E4E8]">
               <th className="px-[16px] py-[14px]">RMA</th>
               <th className='px-[16px]'>Status</th>

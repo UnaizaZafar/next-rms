@@ -11,23 +11,23 @@ const Hero = () => {
   return (
     <>
       <div>
-        <div className="w-[1124px]  rounded-xl bg-black">
-          <div className="w-[400px] text-white p-5 grid gap-4">
+        <div className="w-full  rounded-xl bg-black">
+          <div className="w-full  text-white p-5 grid gap-4">
             <h1 className="font-extrabold text-2xl">Welcome Back</h1>
             <p className="font-medium text-base text-[#FAFAFA99] ">
               Get an Overview of all the stats from this page
             </p>
           </div>
         </div>
-        <div className="py-6 flex items-center w-[1124px]">
+        <div className="py-6 flex items-center w-full">
           <h1 className="text-2xl font-extrabold">Ticket Stats:</h1>
           <hr className=" w-[960px]" />
         </div>
-        <div className="flex justify-between w-[1124px]">
-          <Cards heading="Summary " className='px-7 py-6'>
+        <div className="flex justify-between gap-7 w-full">
+          <Cards heading="Summary " className=''>
             <div className="flex flex-col">
               <div className="my-2">
-                <div className=" flex justify-between items-center rounded-md w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
+                <div className=" flex justify-between items-center rounded-md w-full h-12 font-semibold text-base bg-[#F4F4F5] p-4">
                   <h1 className="">Awaiting Unit Arrival</h1>
                   <div className="bg-black rounded-md">
                     <h1 className=" text-white p-1 ">06</h1>
@@ -35,7 +35,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="my-2">
-                <div className=" flex justify-between items-center rounded-md w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
+                <div className=" flex justify-between items-center rounded-md w-full h-12 font-semibold text-base bg-[#F4F4F5] p-4">
                   <h1 className="">In-queue</h1>
                   <div className="bg-black rounded-md">
                     <h1 className=" text-white p-1 ">12</h1>
@@ -43,7 +43,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="my-2">
-                <div className=" flex justify-between items-center rounded-md w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
+                <div className=" flex justify-between items-center rounded-md w-full h-12 font-semibold text-base bg-[#F4F4F5] p-4">
                   <h1 className="">In-progress</h1>
                   <div className="bg-black rounded-md">
                     <h1 className=" text-white p-1 ">02</h1>
@@ -51,7 +51,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="my-2">
-                <div className=" flex justify-between items-center rounded-md w-80 h-12 font-semibold text-base bg-[#F4F4F5] p-4">
+                <div className=" flex justify-between items-center rounded-md w-full h-12 font-semibold text-base bg-[#F4F4F5] p-4">
                   <h1 className="">Resolved</h1>
                   <div className="bg-black rounded-md">
                     <h1 className=" text-white p-1 ">24</h1>
@@ -80,7 +80,7 @@ const Hero = () => {
           <Cards heading="Latest Tickets">
             <div className=" flex flex-col justify-between">
               <div>
-                <table className="w-[316px] ">
+                <table className="w-full ">
                   <tbody>
                     <tr className=" border-b border-gray-400">
                       <th>1. </th>
@@ -123,7 +123,7 @@ const Hero = () => {
                   </tbody>
                 </table>
               </div>
-              <div className="bg-[#18181B] mt-4 flex justify-center items-center rounded w-[316px] h-[34px]">
+              <div className="bg-[#18181B] mt-4 flex justify-center items-center rounded w-full h-[34px]">
                 <h1 className=" text-center font-semibold text-sm text-white">
                   View All
                 </h1>
@@ -135,7 +135,7 @@ const Hero = () => {
           <h1 className="text-2xl font-extrabold">Tag Stats:</h1>
           <hr className="mx-4 w-[1000px]" />
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-7 w-full">
           <Cards heading="Customer Issues">
             <div>
               <h1 className="font-medium text-sm">Total issues: 6</h1>
@@ -160,7 +160,7 @@ const Hero = () => {
             </div>
           </Cards>
           <Cards heading="Overview">
-            <div>
+            <div className="flex flex-col justify-center items-center">
               <h1 className="font-medium text-sm">Total issues: 6</h1>
               <div className="mt-4">
                 <Image alt=""src={issuesGraph} width="313px" height="198px"></Image>

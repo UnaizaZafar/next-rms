@@ -9,25 +9,25 @@ const Hardware = () => {
   return (
     <>
      
-        <div className="flex  justify-between">
-          <div className="bg-[#18181B] w-[131px] h-[45px] rounded-md flex justify-center items-center">
+        <div className="flex  justify-between w-full">
+          <button className="bg-[#18181B] w-[131px] h-[45px] rounded-md flex justify-center items-center">
             <p className="text-white font-medium text-sm ">Add Hardware</p>
-          </div>
+          </button>
           <div className="flex items-center justify-between border rounded-md p-4 border-[#E4E4E7] w-[310px] h-12 bg-white ">
-            <div
+            <search
               type="text"
               placeholder=""
               className="font-normal text-sm text-[#A1A1AA]"
             >
               Search Hardware
-            </div>
+            </search>
             <div>
               <IoIosSearch className="text-base" />
             </div>
           </div>
         </div>
 
-        <table className=" w-[1124px] h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8] ">
+        <table className=" w-full h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8] ">
           <thead className=" font-semibold text-base border-b border-[#E4E4E8]">
             <tr>
             <th className=" px-[16px]  "> </th>
