@@ -1,4 +1,5 @@
 "use client ";
+
 import { Fragment } from "react";
 import Image from "next/image";
 import NoData from "../images/searching-with-telescope-3025710-2526908.png";
@@ -93,7 +94,7 @@ const Widgets = () => {
                   <input
                     value={formData.url}
                     onChange={(e) => handleValues("url", e.target.value)}
-                    type="text"
+                    type="url"
                     required
                     name="url"
                     className="text-xs font-normal text-[#A1A1AA] w-full h-[42px] my-2 rounded-md border py-3 px-4 border-[#E4E4E7] bg-white"

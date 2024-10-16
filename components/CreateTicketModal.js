@@ -73,7 +73,7 @@ const CreateTicketModal = ({ isVisible, onClose }) => {
                   <textarea
                     rows="4"
                     cols="50"
-                    className="font-semibold text-xs mt-2 text-[#A1A1AA] border border-[#E4E4E7] rounded-md w-[644px] h-10 p-2"
+                    className="font-semibold  text-xs mt-2 text-[#A1A1AA] border border-[#E4E4E7] rounded-md w-[644px] h-15 p-2"
                     placeholder="Enter address"
                   ></textarea>
                 </div>{" "}

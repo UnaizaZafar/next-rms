@@ -24,19 +24,18 @@ const Modal = ({
         className="fixed inset-0 flex justify-center  items-center bg-opacity-25 backdrop-blur-sm"
         onClick={handleClose}
       >
-        <div className=" h-[600px] border rounded-xl p-8 flex-flex-col gap-3  bg-white overflow-y-scroll m-8">
-          <div className="flex justify-between ">
-            <h1 className="font-bold text-2xl "> Create Ticket</h1>
+        <div className=" h-[650px] border rounded-xl p-8 flex-  bg-white overflow-y-scroll m-8">
+          <div className="flex flex-col gap-4">
+            <div className="flex justify-between ">
+              <h1 className="font-bold text-2xl "> Create Ticket</h1>
 
-            <button
-              className="w-6 h-6 font-extrabold"
-              onClick={() => onClose()}
-            >
-              X
-            </button>
-          </div>
-
-         
+              <button
+                className="w-6 h-6 font-extrabold"
+                onClick={() => onClose()}
+              >
+                X
+              </button>
+            </div>
             <div className="flex justify-between w-[692px] h-[56px] rounded-lg border border-[#E4E4E7] p-4 bg-[#FAFAFA]">
               <Link href="">
                 <div className="flex gap-2 items-center w-22">
@@ -54,13 +53,12 @@ const Modal = ({
               </Link>
               <Link href="">
                 <div className="flex gap-2 items-center ">
-                  
-                    <p
-                      className={`${link2bg} text-white size-6 flex items-center justify-center  rounded-full`}
-                    >
-                      2
-                    </p>
-                  
+                  <p
+                    className={`${link2bg} text-white size-6 flex items-center justify-center  rounded-full`}
+                  >
+                    2
+                  </p>
+
                   <h2 className={`${link2text} font-semibold text-sm`}>
                     {" "}
                     Repair Ticket{" "}
@@ -69,12 +67,12 @@ const Modal = ({
               </Link>
               <Link href="">
                 <div className="flex gap-2 items-center">
-                    <p
-                      className={`${link3bg} text-white size-6 flex items-center justify-center  rounded-full`}
-                    >
-                      3
-                    </p>
-                  
+                  <p
+                    className={`${link3bg} text-white size-6 flex items-center justify-center  rounded-full`}
+                  >
+                    3
+                  </p>
+
                   <h2 className={`${link3text} font-semibold text-sm`}>
                     {" "}
                     Ticket issued{" "}
@@ -82,7 +80,7 @@ const Modal = ({
                 </div>
               </Link>
             </div>
-          
+          </div>
 
           <div className="w-[692px] h-[600px] mt-6">
             <div>
