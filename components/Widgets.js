@@ -15,19 +15,21 @@ const Widgets = () => {
     name: "",
     url: "",
   });
+
   const [widgetList, setWidgetList] = useState([]);
   const [selectedWidgetIndex, setSelectedWidgetIndex] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const handleSubmit = (event) => {
     event.preventDefault();
-    setWidgetList([...widgetList, formData]); //formData duplicated in widgetList
+    const widgetId = Math.floor(Math.random() * 100);
+    console.log("id= ", widgetId);
+    setWidgetList([...widgetList, { ...formData, id: widgetId }]); //formData duplicated in widgetList
     setForm({
       name: "",
       url: "",
     });
-
     console.log("form submitted");
-    console.log(formData);
+    console.log({ formData, id: widgetId });
   };
   const handleValues = (fieldName, newValue) => {
     setForm({
@@ -36,14 +38,20 @@ const Widgets = () => {
     });
   };
 
-  const handleOpenModal = (index) => {
-    setSelectedWidgetIndex(index);
+  const handleOpenModal = (widgetId) => {
+    setSelectedWidgetIndex(widgetId);
     setShowModal(true);
   };
-  const handleDeleteWidget = (index) => {
-    const updatedWidgetList = widgetList.filter((_, i) => i !== index);
-    setWidgetList(updatedWidgetList);
+  const handleDeleteWidget = () => {
+    if (selectedWidgetId !== null) {
+      const updatedWidgetList = widgetList.filter(
+        (widget) => widget.id !== selectedWidgetId
+      );
+      setWidgetList(updatedWidgetList);
+      setSelectedWidgetId(null);
+    }
   };
+
   return (
     <>
       <Fragment>
@@ -153,7 +161,6 @@ const Widgets = () => {
                                   onClick={() => {
                                     navigator.clipboard.writeText(widget.url);
                                     alert("URl copied");
-                                    // <Alert severity="success">This is a success Alert.</Alert>
                                   }}
                                 >
                                   {" "}
@@ -161,7 +168,7 @@ const Widgets = () => {
                                 </button>
                                 <button
                                   onClick={() => {
-                                    handleOpenModal(index);
+                                    handleOpenModal(widget.id);
                                   }}
                                 >
                                   <RiDeleteBin6Line />
