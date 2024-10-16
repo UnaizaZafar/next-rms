@@ -19,17 +19,33 @@ const Widgets = () => {
   const [widgetList, setWidgetList] = useState([]);
   const [selectedWidgetIndex, setSelectedWidgetIndex] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [isValid, setIsValid] = useState(false);
+  // const [url, setUrl] = useState("");
+  const [message, setMessage] = useState("");
+  const validateURL = (url) => {
+    const regEx = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi;
+    return regEx.test(url);
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
-    const widgetId = Math.floor(Math.random() * 100);
-    console.log("id= ", widgetId);
-    setWidgetList([...widgetList, { ...formData, id: widgetId }]); //formData duplicated in widgetList
-    setForm({
-      name: "",
-      url: "",
-    });
-    console.log("form submitted");
-    console.log({ formData, id: widgetId });
+    const isValid = validateURL(formData.url);
+    setIsValid(isValid);
+    if (isValid) {
+      setMessage("Valid");
+      const widgetId = Math.floor(Math.random() * 100);
+      setWidgetList([...widgetList, { ...formData, id: widgetId }]); //formData duplicated in widgetList
+      setForm({
+        name: "",
+        url: "",
+      });
+      console.log("form submitted");
+      console.log({ formData, id: widgetId });
+  } else {
+      setMessage("Not Valid");
+    }
+    // console.log("id= ", widgetId);
+ 
+   
   };
   const handleValues = (fieldName, newValue) => {
     setForm({
@@ -43,15 +59,15 @@ const Widgets = () => {
     setShowModal(true);
   };
   const handleDeleteWidget = () => {
-    if (selectedWidgetId !== null) {
-      const updatedWidgetList = widgetList.filter(
-        (widget) => widget.id !== selectedWidgetId
-      );
-      setWidgetList(updatedWidgetList);
-      setSelectedWidgetId(null);
-    }
+    const updatedWidgetList = widgetList.filter(
+      (widget) => widget.id !== selectedWidgetIndex
+    );
+    setWidgetList(updatedWidgetList);
+    setShowModal(false);
+    setSelectedWidgetIndex(null);
   };
 
+  
   return (
     <>
       <Fragment>
@@ -101,14 +117,23 @@ const Widgets = () => {
                   </label>
                   <input
                     value={formData.url}
-                    onChange={(e) => handleValues("url", e.target.value)}
-                    type="url"
+                    onChange={(e) =>  handleValues("url", e.target.value)}
+                    type="text"
                     required
                     name="url"
                     className="text-xs font-normal text-[#A1A1AA] w-full h-[42px] my-2 rounded-md border py-3 px-4 border-[#E4E4E7] bg-white"
                     placeholder="Enter URL of the website"
                   />
                 </div>
+                {message && (
+                  <p
+                    style={
+                      isValid ? { color: "#446A46" } : { color: "#990000" }
+                    }
+                  >
+                    {message}
+                  </p>
+                )}
 
                 <div className="flex justify-end my-6 bg-[#18181B] w-full max-w-[124px] h-[45px] rounded-md py-3 px-6 items-center">
                   <button
@@ -186,7 +211,7 @@ const Widgets = () => {
             <DeleteModal
               isVisible={showModal}
               handleDelete={handleDeleteWidget}
-              DeleteIndex={selectedWidgetIndex}
+              // DeleteIndex={selectedWidgetIndex}
               onClose={() => setShowModal(false)}
             />
           </div>
