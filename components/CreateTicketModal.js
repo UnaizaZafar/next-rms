@@ -9,12 +9,13 @@ const CreateTicketModal = ({ isVisible, onClose }) => {
   const [showModal2, setShowModal2] = useState(false);
 
   if (!isVisible) return null;
-  const handleClose = (e) => {
-    if (e.target.id === "wrapper") onClose();
+  const handleClose = () => {
+     onClose();
   };
   return (
     <>
       <Modal
+      onClose={handleClose}
         link1bg="bg-black" link1text="text-black"
         title="Customer Info"
         description="Complete information related to the customer is required."
