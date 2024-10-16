@@ -9,7 +9,8 @@ const Hardware = () => {
   return (
     <>
      
-        <div className="flex  justify-between w-full">
+        <div className="flex flex-col justify-between w-full gap-4">
+          <div className="flex justify-between ">
           <button className="bg-[#18181B] w-[131px] h-[45px] rounded-md flex justify-center items-center">
             <p className="text-white font-medium text-sm ">Add Hardware</p>
           </button>
@@ -27,143 +28,143 @@ const Hardware = () => {
           </div>
         </div>
 
-        <table className=" w-full h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8] ">
+        <table className=" w-full h-fit  rounded-xl bg-white border border-[#E4E4E8] ">
           <thead className=" font-semibold text-base border-b border-[#E4E4E8]">
-            <tr>
-            <th className=" px-[16px]  "> </th>
-            <th className="px-[16px] py-[14px]">Hardware Type</th>
-            <th className="px-[16px]">Model</th>
+            <tr className="">
+            <th className="   "> </th>
+            <th className=" py-[14px]">Hardware Type</th>
+            <th className="">Model</th>
 
-            <th className="px-[16px]">Date Added</th>
-            <th className="px-[16px]">Actions</th>
+            <th className="">Date Added</th>
+            <th className="">Actions</th>
             </tr>
           </thead>
           <tbody className="font-normal text-xs text-[#52525B] ">
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">1</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">gMS-1945</th>
+              <th className="">1</th>
+              <th className="">Mouse</th>
+              <th className="">gMS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start ">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center ">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
               </th>
             </tr>
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">2</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">MS-1945</th>
+              <th className="">2</th>
+              <th className="">Mouse</th>
+              <th className="">MS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
               </th>
             </tr>
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">3</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">micMS-1945</th>
+              <th className="">3</th>
+              <th className="">Mouse</th>
+              <th className="">micMS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
               </th>
             </tr>
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">4</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">dMS-1945</th>
+              <th className="">4</th>
+              <th className="">Mouse</th>
+              <th className="">dMS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
               </th>
             </tr>
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">5</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">MS-1945</th>
+              <th className="">5</th>
+              <th className="">Mouse</th>
+              <th className="">MS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
               </th>
             </tr>
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">6</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">MS-1945</th>
+              <th className="">6</th>
+              <th className="">Mouse</th>
+              <th className="">MS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
               </th>
             </tr>
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">7</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">wilMS-1945</th>
+              <th className="">7</th>
+              <th className="">Mouse</th>
+              <th className="">wilMS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
               </th>
             </tr>
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">8</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">cMS-1945</th>
+              <th className="">8</th>
+              <th className="">Mouse</th>
+              <th className="">cMS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
               </th>
             </tr>
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">9</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">jeMS-1945</th>
+              <th className="">9</th>
+              <th className="">Mouse</th>
+              <th className="">jeMS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
               </th>
             </tr>
             <tr className=" border-b border-[#E4E4E8]">
-              <th className="px-[16px]">10</th>
-              <th className="px-[16px]">Mouse</th>
-              <th className="px-[16px]">MS-1945</th>
+              <th className="">10</th>
+              <th className="">Mouse</th>
+              <th className="">MS-1945</th>
 
-              <th className="px-[16px]">Oct 12, 2022</th>
+              <th className="">Oct 12, 2022</th>
               <th className="">
-                <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
+                <div className="flex text-[20px] px-7 py-[21.5px] justify-center items-center">
                   <FaRegPenToSquare className="mx-3" />
                   <RiDeleteBin6Line />
                 </div>
@@ -171,7 +172,7 @@ const Hardware = () => {
             </tr>
           </tbody>
         </table>
-
+        </div>
         <div className='flex items-center mt-4 justify-end'>
           <IoIosArrowBack className='w-4 h-4 '/>
           <p className='text-[#D4D4D8] text-sm font-medium mx-3'>Previous</p>
