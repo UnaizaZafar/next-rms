@@ -37,8 +37,8 @@ const Customers = () => {
                 <th className="">1</th>
                 <th className="">Lane</th>
                 <th className="">georgia.young@example.com</th>
-                <th className="">
-                  <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
+                <th className="flex justify-center items-center h-full">
+                  <div className="w-[86px] h-[26px] rounded-full  py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">
                       Technician
                     </p>
@@ -56,7 +56,7 @@ const Customers = () => {
                 <th className="">2</th>
                 <th className="">Fox</th>
                 <th className="">bill.sanders@example.com</th>
-                <th className="">
+                <th className="flex justify-center items-center h-full">
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
@@ -73,7 +73,7 @@ const Customers = () => {
                 <th className="">3</th>
                 <th className="">Edwards</th>
                 <th className="">michelle.rivera@example.com</th>
-                <th className="">
+                <th className="flex justify-center items-center h-full">
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">Admin</p>
                   </div>
@@ -90,7 +90,7 @@ const Customers = () => {
                 <th className="">4</th>
                 <th className="">Richards</th>
                 <th className="">deanna.curtis@example.com</th>
-                <th className="">
+                <th className="flex justify-center items-center h-full">
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
@@ -107,7 +107,7 @@ const Customers = () => {
                 <th className="">5</th>
                 <th className="">Warren</th>
                 <th className="">jackson.graham@example.com</th>
-                <th className="">
+                <th className="flex justify-center items-center h-full">
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
@@ -124,7 +124,7 @@ const Customers = () => {
                 <th className="">6</th>
                 <th className="">Lane</th>
                 <th className="">sara.cruz@example.com</th>
-                <th className="">
+                <th className="flex justify-center items-center h-full">
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
@@ -141,7 +141,7 @@ const Customers = () => {
                 <th className="">7</th>
                 <th className="">Edwards</th>
                 <th className="">willie.jennings@example.com</th>
-                <th className="">
+                <th className="flex justify-center items-center h-full">
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
@@ -158,7 +158,7 @@ const Customers = () => {
                 <th className="">8</th>
                 <th className="">Fox</th>
                 <th className="">curtis.weaver@example.com</th>
-                <th className="">
+                <th className="flex justify-center items-center h-full">
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
@@ -175,7 +175,7 @@ const Customers = () => {
                 <th className="">9</th>
                 <th className="">Richards</th>
                 <th className="">jessica.hanson@example.com</th>
-                <th className="">
+                <th className="flex justify-center items-center h-full">
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">
                       Technician
@@ -194,7 +194,7 @@ const Customers = () => {
                 <th className="">10</th>
                 <th className="">Hawkins</th>
                 <th className="">debbie.baker@example.com</th>
-                <th className="">
+                <th className="flex justify-center items-center h-full">
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">
                       Technician

@@ -27,7 +27,7 @@ const TeamData = () => {
         </div>
         
           <table className=" w-full h-fit rounded-xl bg-white border mt-4 text-left border-[#E4E4E8] ">
-            <thead className=" font-semibold text-base border-b border-[#E4E4E8]">
+            <thead className=" font-semibold text-base text-center border-b border-[#E4E4E8]">
               <tr>
               <th className=" px-[16px] py-[14px] ">First Name</th>
               <th className='px-[16px]'>Last Name</th>
@@ -37,20 +37,22 @@ const TeamData = () => {
               <th className='px-[16px]'>Actions</th>
               </tr>
             </thead>
-            <tbody className="font-normal text-xs text-[#52525B] ">
+            <tbody className="font-normal text-xs text-[#52525B] text-center">
               <tr className=" border-b border-[#E4E4E8]">
                 <td className='px-[16px]'>Eduardo</td>
                 <td className='px-[16px]'>Lane</td>
                 <td className='px-[16px]'>georgia.young@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">
                       Technician
                     </p>
                   </div>
                 </td>
+                
+
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start ">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
@@ -61,13 +63,13 @@ const TeamData = () => {
                 <td className='px-[16px]'>Kristin</td>
                 <td className='px-[16px]'>Fox</td>
                 <td className='px-[16px]'>bill.sanders@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
                 </td>
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
@@ -78,13 +80,13 @@ const TeamData = () => {
                 <td className='px-[16px]'>Angel</td>
                 <td className='px-[16px]'>Edwards</td>
                 <td className='px-[16px]'>michelle.rivera@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">Admin</p>
                   </div>
                 </td>
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
@@ -95,13 +97,13 @@ const TeamData = () => {
                 <td className='px-[16px]'>Cameron</td>
                 <td className='px-[16px]'>Richards</td>
                 <td className='px-[16px]'>deanna.curtis@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
                 </td>
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
@@ -112,13 +114,13 @@ const TeamData = () => {
                 <td className='px-[16px]'>Cody</td>
                 <td className='px-[16px]'>Warren</td>
                 <td className='px-[16px]'>jackson.graham@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
                 </td>
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
@@ -129,13 +131,13 @@ const TeamData = () => {
                 <td className='px-[16px]'>Philip</td>
                 <td className='px-[16px]'>Lane</td>
                 <td className='px-[16px]'>sara.cruz@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
                 </td>
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
@@ -146,13 +148,13 @@ const TeamData = () => {
                 <td className='px-[16px]'>Arthur</td>
                 <td className='px-[16px]'>Edwards</td>
                 <td className='px-[16px]'>willie.jennings@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
                 </td>
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
@@ -163,13 +165,13 @@ const TeamData = () => {
                 <td className='px-[16px]'>Max</td>
                 <td className='px-[16px]'>Fox</td>
                 <td className='px-[16px]'>curtis.weaver@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#EFF6FF]">
                     <p className="font-normal text-sm text-[#2563EB] ">Admin</p>
                   </div>
                 </td>
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
@@ -180,7 +182,7 @@ const TeamData = () => {
                 <td className='px-[16px]'>Leslie</td>
                 <td className='px-[16px]'>Richards</td>
                 <td className='px-[16px]'>jessica.hanson@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">
                       Technician
@@ -188,7 +190,7 @@ const TeamData = () => {
                   </div>
                 </td>
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />
@@ -199,7 +201,7 @@ const TeamData = () => {
                 <td className='px-[16px]'>Darrel</td>
                 <td className='px-[16px]'>Hawkins</td>
                 <td className='px-[16px]'>debbie.baker@example.com</td>
-                <td className='px-[16px]'>
+                <td className='px-[16px] flex justify-center items-center h-full'>
                   <div className="w-[86px] h-[26px] rounded-full px-[6px] py-3 flex items-center justify-center bg-[#FAF5FF]">
                     <p className="font-normal text-sm text-[#9333EA] ">
                       Technician
@@ -207,7 +209,7 @@ const TeamData = () => {
                   </div>
                 </td>
                 <td className='px-[16px]'>Oct 12, 2022</td>
-                <td className=''>
+                <td className='flex justify-center items-center h-full'>
                   <div className="flex text-[20px] px-7 py-[21.5px] justify-start">
                     <FaRegPenToSquare className='mx-3' />
                     <RiDeleteBin6Line />

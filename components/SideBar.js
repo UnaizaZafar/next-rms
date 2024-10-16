@@ -25,10 +25,10 @@ const SideBar = () => {
           <div className="flex flex-col gap-1">
             {" "}
             <Link
-              className={`link hover:bg-black hover:text-white/90 hover:rounded-lg  ${
+              className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg  ${
                 pathname === "/analytics"
-                  ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
-                  : "no-underline bg-transparent  flex items-center  py-3 px-4 text-[#A1A1AA] "
+                  ? "no-underline flex items-center  bg-[#3F3F46] w-[224px] h-10 rounded-lg"
+                  : "no-underline bg-transparent  flex items-center   text-[#A1A1AA] "
               }`}
               href="/analytics"
             >
@@ -36,10 +36,10 @@ const SideBar = () => {
               <p>Analytics</p>
             </Link>
             <Link
-              className={`link hover:bg-black hover:text-white/90 hover:rounded-lg ${
+              className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg ${
                 pathname === "/tickets"
-                  ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
-                  : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
+                  ? "no-underline flex items-center  bg-[#3F3F46] w-[224px] h-10 rounded-lg"
+                  : "no-underline  flex items-center   bg-transparent text-[#A1A1AA]"
               }`}
               href="/tickets"
             >
@@ -48,10 +48,10 @@ const SideBar = () => {
               Tickets
             </Link>{" "}
             <Link
-              className={`link hover:bg-black hover:text-white/90 hover:rounded-lg ${
+              className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg ${
                 pathname === "/customers"
-                  ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
-                  : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
+                  ? "no-underline flex items-center  bg-[#3F3F46] w-[224px] h-10 rounded-lg"
+                  : "no-underline  flex items-center   bg-transparent text-[#A1A1AA]"
               }`}
               href="/customers"
             >
@@ -59,10 +59,10 @@ const SideBar = () => {
               Customers
             </Link>
             <Link
-              className={`link hover:bg-black hover:text-white/90 hover:rounded-lg ${
+              className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg ${
                 pathname === "/hardware"
-                  ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
-                  : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
+                  ? "no-underline flex items-center  bg-[#3F3F46] w-[224px] h-10 rounded-lg"
+                  : "no-underline  flex items-center   bg-transparent text-[#A1A1AA]"
               }`}
               href="/hardware"
             >
@@ -70,10 +70,10 @@ const SideBar = () => {
               Hardware
             </Link>
             <Link
-              className={`link hover:bg-black hover:text-white/90 hover:rounded-lg ${
+              className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg ${
                 pathname === "/team"
-                  ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
-                  : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
+                  ? "no-underline flex items-center  bg-[#3F3F46] w-[224px] h-10 rounded-lg"
+                  : "no-underline  flex items-center   bg-transparent text-[#A1A1AA]"
               }`}
               href="/team"
             >
@@ -81,10 +81,10 @@ const SideBar = () => {
               Team
             </Link>
             <Link
-              className={`link hover:bg-black hover:text-white/90 hover:rounded-lg ${
+              className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg ${
                 pathname === "/settings"
-                  ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
-                  : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
+                  ? "no-underline flex items-center  bg-[#3F3F46] w-[224px] h-10 rounded-lg"
+                  : "no-underline  flex items-center   bg-transparent text-[#A1A1AA]"
               }`}
               href="/"
             >
@@ -92,10 +92,10 @@ const SideBar = () => {
               Settings
             </Link>
             <Link
-              className={`link hover:bg-black hover:text-white/90 hover:rounded-lg ${
+              className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg ${
                 pathname === "/tag-manager"
-                  ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
-                  : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
+                  ? "no-underline flex items-center  bg-[#3F3F46] w-[224px] h-10 rounded-lg"
+                  : "no-underline  flex items-center   bg-transparent text-[#A1A1AA]"
               }`}
               href="/tag-manager"
             >
@@ -103,10 +103,10 @@ const SideBar = () => {
               Tag Manager
             </Link>
             <Link
-              className={`link hover:bg-black hover:text-white/90 hover:rounded-lg ${
+              className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg ${
                 pathname === "/widgets"
-                  ? "no-underline flex items-center py-3 px-4 bg-[#3F3F46] w-[224px] h-10 rounded-lg"
-                  : "no-underline  flex items-center  py-3 px-4 bg-transparent text-[#A1A1AA]"
+                  ? "no-underline flex items-center  bg-[#3F3F46] w-[224px] h-10 rounded-lg"
+                  : "no-underline  flex items-center   bg-transparent text-[#A1A1AA]"
               }`}
               href="/widgets"
             >
