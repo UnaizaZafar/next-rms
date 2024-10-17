@@ -131,14 +131,14 @@ const Widgets = () => {
                   </p>
                 )}
 
-                <div className="flex justify-end my-6 bg-[#18181B] w-full max-w-[124px] h-[45px] rounded-md py-3 px-6 items-center">
                   <button
                     type="submit"
                     className={` text-white font-medium text-sm`}
                   >
+                <div className="flex justify-end my-6 bg-[#18181B] w-full max-w-[124px] h-[45px] rounded-md py-3 px-6 items-center">
                     Add Widget
-                  </button>
                 </div>
+                  </button>
               </form>
             </div>
             <div className="w-full  h-full min-h-[358px] rounded-xl border p-6 bg-white border[-#E4E4E7]">
