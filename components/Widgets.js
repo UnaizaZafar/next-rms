@@ -23,7 +23,8 @@ const Widgets = () => {
   // const [url, setUrl] = useState("");
   const [message, setMessage] = useState("");
   const validateURL = (url) => {
-    const regEx = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi;
+    const regEx =
+      /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi;
     return regEx.test(url);
   };
   const handleSubmit = (event) => {
@@ -32,20 +33,18 @@ const Widgets = () => {
     setIsValid(isValid);
     if (isValid) {
       setMessage("Valid");
-      const widgetId = Math.floor(Math.random() * 100);
-      setWidgetList([...widgetList, { ...formData, id: widgetId }]); //formData duplicated in widgetList
+      // const widgetId = Math.floor(Math.random() * 100);
+      setWidgetList([...widgetList, { ...formData, widgetId: Math.floor(Math.random() * 100) }]); //formData duplicated in widgetList
       setForm({
         name: "",
         url: "",
       });
       console.log("form submitted");
-      console.log({ formData, id: widgetId });
-  } else {
+      console.log({ formData, widgetId: Math.floor(Math.random() * 100)});
+    } else {
       setMessage("Not Valid");
     }
     // console.log("id= ", widgetId);
- 
-   
   };
   const handleValues = (fieldName, newValue) => {
     setForm({
@@ -59,15 +58,12 @@ const Widgets = () => {
     setShowModal(true);
   };
   const handleDeleteWidget = () => {
-    const updatedWidgetList = widgetList.filter(
-      (widget) => widget.id !== selectedWidgetIndex
-    );
+    const updatedWidgetList = widgetList.filter((widget) => widget.widgetId !== selectedWidgetIndex);
     setWidgetList(updatedWidgetList);
     setShowModal(false);
     setSelectedWidgetIndex(null);
   };
 
-  
   return (
     <>
       <Fragment>
@@ -117,7 +113,7 @@ const Widgets = () => {
                   </label>
                   <input
                     value={formData.url}
-                    onChange={(e) =>  handleValues("url", e.target.value)}
+                    onChange={(e) => handleValues("url", e.target.value)}
                     type="text"
                     required
                     name="url"
@@ -193,7 +189,7 @@ const Widgets = () => {
                                 </button>
                                 <button
                                   onClick={() => {
-                                    handleOpenModal(widget.id);
+                                    handleOpenModal(widget.widgetId);
                                   }}
                                 >
                                   <RiDeleteBin6Line />
