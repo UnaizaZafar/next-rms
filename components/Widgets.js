@@ -138,7 +138,7 @@ const Widgets = () => {
                     {message}
                   </p>
                 )}
-               <Button text="Add Widget"  css={`${formData.name.length === 0 || formData.url.length === 0
+               <Button text="Add Widget"  state={`${formData.name.length === 0 || formData.url.length === 0
                       ? "bg-[#18181B]/50 cursor-not-allowed"
                       : "bg-[#18181B]"
                   }`} />

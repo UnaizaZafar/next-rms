@@ -126,7 +126,7 @@ const Hero = () => {
               </div>
               {/* <div className="place-self-end  pt-1"> */}
 
-              <Button text="View All" primary css="w-full"/>
+              <Button text="View All" primary width="w-full"/>
               {/* </div> */}
               {/* <div className="bg-[#18181B] mt-4 flex justify-center items-center rounded w-full h-[34px]">
                 <h1 className=" text-center font-semibold text-sm text-white">

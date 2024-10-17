@@ -12,11 +12,13 @@ const TopBar = ({ heading }) => {
         <div className=" w-full px-6 flex justify-between place-items-center bg-white border-b border-[#E4E4E7] h-[90px]">
           <h1 className="text-2xl font-extrabold">{heading}</h1>
           <Link
-              href=""
-              onClick={() => setShowModal(true)}
-              className="text-lg font-extrabold mx-1"
-            >
-          <Button text="CREATE TICKET" primary><MdOutlineAddCircleOutline style={{ size: "18px" }} /> </Button>
+            href=""
+            onClick={() => setShowModal(true)}
+            className="text-lg font-extrabold mx-1"
+          >
+            <Button text="CREATE TICKET" primary>
+              <MdOutlineAddCircleOutline style={{ size: "20px" }} />{" "}
+            </Button>
           </Link>
           {/* <div className="bg-black text-white w-[217px] h-[50px] rounded-md items-center flex place-content-center">
             <MdOutlineAddCircleOutline style={{ size: "18px" }} />
