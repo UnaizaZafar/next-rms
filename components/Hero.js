@@ -6,6 +6,7 @@ import issuesGraph from "../images/Group 811714.png";
 import pieGraph from "../images/Group 811713.png";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -123,11 +124,15 @@ const Hero = () => {
                   </tbody>
                 </table>
               </div>
-              <div className="bg-[#18181B] mt-4 flex justify-center items-center rounded w-full h-[34px]">
+              {/* <div className="place-self-end  pt-1"> */}
+
+              <Button text="View All" primary css="w-full"/>
+              {/* </div> */}
+              {/* <div className="bg-[#18181B] mt-4 flex justify-center items-center rounded w-full h-[34px]">
                 <h1 className=" text-center font-semibold text-sm text-white">
                   View All
                 </h1>
-              </div>
+              </div> */}
             </div>
           </Cards>
         </div>

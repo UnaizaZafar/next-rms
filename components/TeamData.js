@@ -1,4 +1,4 @@
-import React from "react";
+import Button from "./Button";
 import { IoIosSearch } from "react-icons/io";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaRegPenToSquare } from "react-icons/fa6";
@@ -9,9 +9,8 @@ const TeamData = () => {
     <>
       <div>
         <div className="flex  justify-between w-full">
-          <div className="bg-[#18181B] w-[131px] h-[45px] rounded-md flex justify-center items-center">
-            <p className="text-white font-medium text-sm ">Add Member</p>
-          </div>
+            <Button text="Add Member" primary/>
+          
           <div className="flex items-center justify-between border rounded-md p-4 border-[#E4E4E7] w-[310px] h-12 bg-white ">
             <div
               type="text"

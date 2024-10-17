@@ -9,6 +9,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import website from "../data/website.json";
 import DeleteModal from "./DeleteModal";
+import Button from "./Button";
 export const revalidate = 10;
 const Widgets = () => {
   const [formData, setForm] = useState({
@@ -20,7 +21,6 @@ const Widgets = () => {
   const [selectedWidgetIndex, setSelectedWidgetIndex] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [isValid, setIsValid] = useState(false);
-  const [disable, setDisable] = useState(false);
 
   // const [url, setUrl] = useState("");
   const [message, setMessage] = useState("");
@@ -45,7 +45,7 @@ const Widgets = () => {
         url: "",
       });
       console.log("form submitted");
-      setDisable(1);
+     
       console.log({ formData, widgetId: Math.floor(Math.random() * 100) });
     } else {
       setMessage("Not Valid");
@@ -138,11 +138,16 @@ const Widgets = () => {
                     {message}
                   </p>
                 )}
-
-                <button
+               <Button text="Add Widget" primary css={`${formData.name.length === 0 || formData.url.length === 0
+                      ? "bg-[#18181B]/50 cursor-not-allowed"
+                      : "bg-[#18181B]"
+                  }`} />
+                {/* <button
                   type="submit"
                   className={` text-white flex justify-end my-6  rounded-md py-3 px-6 items-center   w-full max-w-[124px] h-[45px]  font-medium text-sm ${
-                    formData.name.length === 0 || formData.url.length === 0 ? "bg-[#18181B]/50" : "bg-[#18181B]"
+                    formData.name.length === 0 || formData.url.length === 0
+                      ? "bg-[#18181B]/50 cursor-not-allowed"
+                      : "bg-[#18181B]"
                   }`}
                   disabled={
                     formData.name.length === 0 ||
@@ -151,7 +156,7 @@ const Widgets = () => {
                   }
                 >
                   Add Widget
-                </button>
+                </button> */}
               </form>
             </div>
             <div className="w-full  h-full min-h-[358px] rounded-xl border p-6 bg-white border[-#E4E4E7]">

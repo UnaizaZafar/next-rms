@@ -4,15 +4,17 @@ import { FaRegPenToSquare } from "react-icons/fa6";
 import { IoIosArrowBack } from "react-icons/io";
 import { MdNavigateNext } from "react-icons/md";
 import React from "react";
+import Button from "./Button";
 
 const Hardware = () => {
   return (
     <>
       <div className="flex flex-col justify-between w-full gap-4">
         <div className="flex justify-between ">
-          <button className="bg-[#18181B] w-[131px] h-[45px] rounded-md flex justify-center items-center">
+          <Button text="Add Hardware" primary/>
+          {/* <button className="bg-[#18181B] w-[131px] h-[45px] rounded-md flex justify-center items-center">
             <p className="text-white font-medium text-sm ">Add Hardware</p>
-          </button>
+          </button> */}
           <div className="flex items-center justify-between border rounded-md p-4 border-[#E4E4E7] w-[310px] h-12 bg-white ">
             <search
               type="text"
