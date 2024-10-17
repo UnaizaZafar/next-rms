@@ -20,6 +20,8 @@ const Widgets = () => {
   const [selectedWidgetIndex, setSelectedWidgetIndex] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [isValid, setIsValid] = useState(false);
+  const [disable, setDisable] = useState(false);
+
   // const [url, setUrl] = useState("");
   const [message, setMessage] = useState("");
   const validateURL = (url) => {
@@ -34,13 +36,17 @@ const Widgets = () => {
     if (isValid) {
       setMessage("Valid");
       // const widgetId = Math.floor(Math.random() * 100);
-      setWidgetList([...widgetList, { ...formData, widgetId: Math.floor(Math.random() * 100) }]); //formData duplicated in widgetList
+      setWidgetList([
+        ...widgetList,
+        { ...formData, widgetId: Math.floor(Math.random() * 100) },
+      ]); //formData duplicated in widgetList
       setForm({
         name: "",
         url: "",
       });
       console.log("form submitted");
-      console.log({ formData, widgetId: Math.floor(Math.random() * 100)});
+      setDisable(1);
+      console.log({ formData, widgetId: Math.floor(Math.random() * 100) });
     } else {
       setMessage("Not Valid");
     }
@@ -58,7 +64,9 @@ const Widgets = () => {
     setShowModal(true);
   };
   const handleDeleteWidget = () => {
-    const updatedWidgetList = widgetList.filter((widget) => widget.widgetId !== selectedWidgetIndex);
+    const updatedWidgetList = widgetList.filter(
+      (widget) => widget.widgetId !== selectedWidgetIndex
+    );
     setWidgetList(updatedWidgetList);
     setShowModal(false);
     setSelectedWidgetIndex(null);
@@ -131,14 +139,19 @@ const Widgets = () => {
                   </p>
                 )}
 
-                  <button
-                    type="submit"
-                    className={` text-white font-medium text-sm`}
-                  >
-                <div className="flex justify-end my-6 bg-[#18181B] w-full max-w-[124px] h-[45px] rounded-md py-3 px-6 items-center">
-                    Add Widget
-                </div>
-                  </button>
+                <button
+                  type="submit"
+                  className={` text-white flex justify-end my-6  rounded-md py-3 px-6 items-center   w-full max-w-[124px] h-[45px]  font-medium text-sm ${
+                    formData.name.length === 0 || formData.url.length === 0 ? "bg-[#18181B]/50" : "bg-[#18181B]"
+                  }`}
+                  disabled={
+                    formData.name.length === 0 ||
+                    formData.url.length === 0 ||
+                    disable === true
+                  }
+                >
+                  Add Widget
+                </button>
               </form>
             </div>
             <div className="w-full  h-full min-h-[358px] rounded-xl border p-6 bg-white border[-#E4E4E7]">
