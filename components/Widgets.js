@@ -21,8 +21,6 @@ const Widgets = () => {
   const [selectedWidgetIndex, setSelectedWidgetIndex] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [isValid, setIsValid] = useState(false);
-
-  // const [url, setUrl] = useState("");
   const [message, setMessage] = useState("");
   const validateURL = (url) => {
     const regEx =
@@ -31,11 +29,11 @@ const Widgets = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log("clicked")
     const isValid = validateURL(formData.url);
     setIsValid(isValid);
     if (isValid) {
       setMessage("Valid");
-      // const widgetId = Math.floor(Math.random() * 100);
       setWidgetList([
         ...widgetList,
         { ...formData, widgetId: Math.floor(Math.random() * 100) },
@@ -50,7 +48,7 @@ const Widgets = () => {
     } else {
       setMessage("Not Valid");
     }
-    // console.log("id= ", widgetId);
+   
   };
   const handleValues = (fieldName, newValue) => {
     setForm({
