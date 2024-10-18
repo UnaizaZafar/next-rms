@@ -9,27 +9,18 @@ const TopBar = ({ heading }) => {
   return (
     <>
       <div className="flex items-center font-[Manrope] ">
-        <div className=" w-full px-6 flex justify-between place-items-center bg-white border-b border-[#E4E4E7] h-[90px]">
+        <div className=" w-full flex justify-between place-items-center bg-white border-b border-[#E4E4E7] py-5 px-6">
           <h1 className="text-2xl font-extrabold">{heading}</h1>
           <Link
             href=""
             onClick={() => setShowModal(true)}
             className="text-lg font-extrabold mx-1"
           >
-            <Button text="CREATE TICKET" primary>
+            <Button text="CREATE TICKET" primary textSize="text-lg">
               <MdOutlineAddCircleOutline style={{ size: "20px" }} />{" "}
             </Button>
           </Link>
-          {/* <div className="bg-black text-white w-[217px] h-[50px] rounded-md items-center flex place-content-center">
-            <MdOutlineAddCircleOutline style={{ size: "18px" }} />
-            <Link
-              href=""
-              onClick={() => setShowModal(true)}
-              className="text-lg font-extrabold mx-1"
-            >
-              CREATE TICKET
-            </Link>
-          </div> */}
+          
         </div>
       </div>
       <CreateTicketModal

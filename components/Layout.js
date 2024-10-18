@@ -33,11 +33,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="flex font-[Manrope] h-full">
+        <div className="flex font-[Manrope] h-screen">
         <SideBar />
-        <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full h-full">
           <TopBar heading={getTopBarHeading()} />
-          <div className="py-5 px-6 bg-[#FAFAFA]">{children}</div>
+          <div className="py-5 px-6 bg-[#FAFAFA] h-full">{children}</div>
         </div>
       </div>
     </>

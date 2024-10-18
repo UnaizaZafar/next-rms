@@ -19,8 +19,8 @@ const SideBar = () => {
 
   return (
     <>
-      <div className="bg-[#18181B] flex-col flex justify-between gap-12 items-center p-10 w-full max-w-[260px]">
-        <div className="flex flex-col gap-12 items-center justify-center text-white">
+      <div className="bg-[#18181B] flex-col flex justify-between gap-12 items-center py-6 w-full  max-w-[260px]">
+        <div className="flex flex-col w-full gap-12 items-center justify-center text-white">
         <Link href="/">  <Image src={logo} width={50} height={44} alt="Logo" /></Link>
           <div className="flex flex-col gap-1">
             {" "}
