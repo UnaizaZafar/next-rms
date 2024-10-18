@@ -16,40 +16,27 @@ const Widgets = () => {
   const [showModal, setShowModal] = useState(false);
   const [isValid, setIsValid] = useState(false);
   const [message, setMessage] = useState("");
+  const [widgetForm, setWidgetForm] = useState([]);
+  const [siteName, setSiteName] = useState("");
+  const [siteUrl, setSiteUrl] = useState("");
+  const [widgetid, setwidgetid] = useState(43);
+
+  const uniqueid = Math.ceil(Math.random() * 100);
 
   const validateURL = (url) => {
     const regEx =
       /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi;
     return regEx.test(url);
   };
-  const handleOpenModal = (widgetID) => {
-    setSelectedWidgetIndex(widgetID);
-    setShowModal(true);
-  };
-  const handleDeleteWidget = () => {
-    const updatedWidgetList = widgetForm.filter(
-      (widget) => widget.widgetID !== selectedWidgetIndex
-    );
-    setWidgetForm(updatedWidgetList);
-    setShowModal(false);
-    setSelectedWidgetIndex(null);
-  };
-  const [widgetForm, setWidgetForm] = useState([]);
-  const [siteName, setSiteName] = useState("");
-  const [siteUrl, setSiteUrl] = useState("");
-  const [widgetid, setwidgetid] = useState(Math.floor(Math.random() * 100));
+
   useEffect(() => {
     console.log("Submitted Form =", widgetForm);
   }, [widgetForm]);
   function handleSiteWidget(event) {
     event.preventDefault();
-    // {
-    //   widgetForm === ""
-    //     ? console.log("Nothing to print")
-    //     : console.log("Data in widget list:");
-    // }
     const isValid = validateURL(siteUrl);
     setIsValid(isValid);
+    setwidgetid(uniqueid);
     if (isValid) {
       const arrayId = widgetForm.length + 1;
       const newWidget = {
@@ -72,23 +59,25 @@ const Widgets = () => {
   function handleSiteUrl(event) {
     setSiteUrl(event.target.value);
   }
+  const handleOpenModal = (widgetID) => {
+    setSelectedWidgetIndex(widgetID);
+    setShowModal(true);
+  };
+  const handleDeleteWidget = () => {
+    const updatedWidgetList = widgetForm.filter(
+      (widget) => widget.widgetID !== selectedWidgetIndex
+    );
+    setWidgetForm(updatedWidgetList);
+    setShowModal(false);
+    setSelectedWidgetIndex(null);
+  };
   return (
     <>
       <Fragment>
-        {/* <ul>
-          {widgetForm.map((widget, index) => (
-            <li key={index}>
-              {widget.name} {widget.url}
-            </li>
-          ))}
-        </ul>
-        <div className="flex flex-col gap-2 border">
-          <input type="text" onChange={handleSiteName} />
-          <input type="text" onChange={handleSiteUrl} />
-          <button onClick={handleSiteWidget}>click me</button>
-        </div> */}
-        <div className="flex flex-col gap-4 justify-end ">
-          <div className="flex items-center  place-self-end justify-between border rounded-md p-4 border-[#E4E4E7] w-full max-w-[310px] h-12 bg-white ">
+        <div className="flex flex-col justify-end w-full max-w-[1124px] mx-auto gap-4 ">
+         
+
+          <div className="flex  items-center place-self-end justify-between border rounded-md p-4 border-[#E4E4E7] w-full max-w-[310px] h-12 bg-white ">
             <div
               type="text"
               placeholder=""
@@ -100,13 +89,12 @@ const Widgets = () => {
               <IoIosSearch className="text-base" />
             </div>
           </div>
-
-          <div className="flex justify-between gap-3">
-            <div className="w-full  h-full rounded-xl border p-6 bg-white border[-#E4E4E7] ">
+          <div className="flex justify-center gap-3">
+            <div className="w-full max-w-[580px]  h-full min-h-[374px] rounded-xl border p-6 bg-white border[-#E4E4E7] ">
               <h1 className="font-bold text-xl text-[#18181B] pb-4">
                 Add Widgets
               </h1>
-              {/* <form onSubmit={handleSubmit}> */}
+
               <div className="flex flex-col">
                 <label
                   htmlFor="Name"
@@ -157,24 +145,8 @@ const Widgets = () => {
                     : "bg-[#18181B]"
                 }`}
               />
-              {/* <button
-                  type="submit"
-                  className={` text-white flex justify-end my-6  rounded-md py-3 px-6 items-center   w-full max-w-[124px] h-[45px]  font-medium text-sm ${
-                    formData.name.length === 0 || formData.url.length === 0
-                      ? "bg-[#18181B]/50 cursor-not-allowed"
-                      : "bg-[#18181B]"
-                  }`}
-                  disabled={
-                    formData.name.length === 0 ||
-                    formData.url.length === 0 ||
-                    disable === true
-                  }
-                >
-                  Add Widget
-                </button> */}
-              {/* </form> */}
             </div>
-            <div className="w-full  h-full min-h-[358px] rounded-xl border p-6 bg-white border[-#E4E4E7]">
+            <div className="w-full max-w-[580px] h-full min-h-[358px] rounded-xl border p-6 bg-white border[-#E4E4E7]">
               <div className="flex justify-between">
                 <h1 className="font-bold text-xl text-[#18181B]">
                   Added Widgets

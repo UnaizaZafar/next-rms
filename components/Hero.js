@@ -11,20 +11,22 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <>
-      <div>
-        <div className="w-full  rounded-xl bg-black">
-          <div className="w-full  text-white p-5 grid gap-4">
+      <div className="text-black">
+        <div className="w-full max-w-[1124px] rounded-xl text-white p-5 mx-auto gap-4 bg-black ">
+          <div className="flex flex-col">
+
             <h1 className="font-extrabold text-2xl">Welcome Back</h1>
             <p className="font-medium text-base text-[#FAFAFA99] ">
               Get an Overview of all the stats from this page
             </p>
           </div>
+          
         </div>
-        <div className="py-6 flex items-center w-full">
+        <div className="py-6 flex items-center justify-center w-full">
           <h1 className="text-2xl font-extrabold">Ticket Stats:</h1>
-          <hr className=" w-[960px]" />
+          <hr className=" w-full max-w-[960px]" />
         </div>
-        <div className="flex justify-between gap-7 w-full">
+        <div className="flex justify-center gap-7 w-full">
           <Cards heading="Summary " className=''>
             <div className="flex flex-col">
               <div className="my-2">
@@ -136,11 +138,11 @@ const Hero = () => {
             </div>
           </Cards>
         </div>
-        <div className="py-6 flex items-center">
+        <div className="py-6 flex items-center justify-center w-full">
           <h1 className="text-2xl font-extrabold">Tag Stats:</h1>
-          <hr className="mx-4 w-[1000px]" />
+          <hr className="w-full max-w-[960px]" />
         </div>
-        <div className="flex justify-between gap-7 w-full">
+        <div className="flex justify-center gap-7 w-full">
           <Cards heading="Customer Issues">
             <div>
               <h1 className="font-medium text-sm">Total issues: 6</h1>

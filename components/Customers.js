@@ -7,7 +7,7 @@ import { MdNavigateNext } from "react-icons/md";
 const Customers = () => {
   return (
     <>
-      <div className="flex flex-col justify-between w-full gap-4">
+      <div className="flex flex-col justify-between w-full gap-4 text-black">
         <div className="flex flex-col gap-3 justify-between">
           <div className="flex place-self-end items-center justify-between border rounded-md p-4 border-[#E4E4E7] w-[310px] h-12 bg-white ">
             <div

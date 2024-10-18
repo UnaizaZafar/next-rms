@@ -19,7 +19,7 @@ const SideBar = () => {
 
   return (
     <>
-      <div className="bg-[#18181B] flex-col flex justify-between gap-12 items-center py-6 w-full  max-w-[260px]">
+      <div className="bg-[#18181B] flex-col flex justify-between gap-12 items-center py-6 w-full grow max-w-[260px]">
         <div className="flex flex-col w-full gap-12 items-center justify-center text-white">
         <Link href="/">  <Image src={logo} width={50} height={44} alt="Logo" /></Link>
           <div className="flex flex-col gap-1">
@@ -80,7 +80,7 @@ const SideBar = () => {
               <GoPeople className="text-[16px] mx-2" />
               Team
             </Link>
-            <Link
+            {/* <Link
               className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg ${
                 pathname === "/settings"
                   ? "no-underline flex items-center  bg-[#3F3F46] w-[224px] h-10 rounded-lg"
@@ -90,7 +90,7 @@ const SideBar = () => {
             >
               <IoSettingsOutline className="text-[16px] mx-2" />
               Settings
-            </Link>
+            </Link> */}
             <Link
               className={`link py-3 px-4 hover:bg-black hover:text-white/90 hover:rounded-lg ${
                 pathname === "/tag-manager"

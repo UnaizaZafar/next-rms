@@ -9,7 +9,7 @@ import { IoIosArrowBack } from "react-icons/io";
 const TicketsHero = ({children}) => {
   return (
     <>
-      <div className="m-0 p-0 flex flex-col gap-4 w-full">
+      <div className="m-0 p-0 flex flex-col gap-4 w-full text-black">
         <div className="flex justify-between text-[#18181B] ">
           <div className="flex font-normal text-sm border-b">
             <Link href="" className="font-bold  m-2">

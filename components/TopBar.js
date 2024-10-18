@@ -10,7 +10,7 @@ const TopBar = ({ heading }) => {
     <>
       <div className="flex items-center font-[Manrope] ">
         <div className=" w-full flex justify-between place-items-center bg-white border-b border-[#E4E4E7] py-5 px-6">
-          <h1 className="text-2xl font-extrabold">{heading}</h1>
+          <h1 className="text-black text-2xl font-extrabold">{heading}</h1>
           <Link
             href=""
             onClick={() => setShowModal(true)}
